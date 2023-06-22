@@ -1,0 +1,9 @@
+罪犯十足地演出了这些信念。你们每个人都害怕自己拥有他们的“特质”。科学与宗教都告诉你，如果放任自流，你会自发成为原始生物，充满了失控的欲望与邪恶。弗洛伊德与耶和华两者都给了你那个讯息，可怜的达尔文想要找出个中缘由，却败得很惨。
+<details> <summary><span style="color:orange">点击查看英文</span></summary>
+Criminals act out those beliefs to perfection. Their “tendencies” are those that each of you fears you possess. Science and religion each tell you that left alone you will spontaneously be primitive creatures, filled with uncontrolled lust and avarice. Both Freud and Jehovah gave you that message. Poor Darwin tried to make sense of it all, but failed miserably.</details>
+罪犯十足地演出了这些信念。你们每个人都害怕自己拥有他们的“特质”。科学与宗教都告诉你，如果放任自流，你会自发成为原始生物，充满了失控的欲望与邪恶。弗洛伊德与耶和华两者都给了你那个讯息，可怜的达尔文想要找出个中缘由，却败得很惨。
+<details> <summary><span style="color:orange">点击查看英文</span></summary>
+Criminals act out those beliefs to perfection. Their “tendencies” are those that each of you fears you possess. Science and religion each tell you that left alone you will spontaneously be primitive creatures, filled with uncontrolled lust and avarice. Both Freud and Jehovah gave you that message. Poor Darwin tried to make sense of it all, but failed miserably.</details>
+罪犯十足地演出了这些信念。你们每个人都害怕自己拥有他们的“特质”。科学与宗教都告诉你，如果放任自流，你会自发成为原始生物，充满了失控的欲望与邪恶。弗洛伊德与耶和华两者都给了你那个讯息，可怜的达尔文想要找出个中缘由，却败得很惨。
+<details> <summary><span style="color:orange">点击查看英文</span></summary>
+Criminals act out those beliefs to perfection. Their “tendencies” are those that each of you fears you possess. Science and religion each tell you that left alone you will spontaneously be primitive creatures, filled with uncontrolled lust and avarice. Both Freud and Jehovah gave you that message. Poor Darwin tried to make sense of it all, but failed miserably.</details>
