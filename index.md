@@ -8,3 +8,8 @@
 
 
  - <a style="color:orange" href="job.html">赛斯资料中关于<b style="color:yellow">工作</b>(job)的摘录</a>
+
+
+
+
+ - <a style="color:orange" href="expectation.html">赛斯资料中关于<b style="color:yellow">期望</b>(expectation)的摘录</a>
