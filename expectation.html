@@ -1,259 +1,14 @@
-<!DOCTYPE html><html><head>
-      <title>expectation</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:////Users/yiwu/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.8/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <style>
-      /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
 
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
-
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
-
-.token.cdata {
-  color: #183691;
-}
-
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
-
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
-
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
-
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
-
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
-
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.token.list {
-  color: #ed6a43;
-}
-
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
-
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
-
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
-
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
-
-code.language-yaml {
-  color: #183691;
-}
-
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
-
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
-
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
-
-.language-makefile .token.variable {
-  color: #183691;
-}
-
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
-
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}
-
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
-
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: hsla(24, 20%, 50%,.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
-
-pre[data-line] .line-highlight:before, 
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%,.4);
-  color: hsl(24, 20%, 95%);
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
-
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}@font-face {
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>no title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p,html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div{display:inline}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  300px/2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#abb2bf;background-color:#31363f !important;border:#4b5362;border-radius:3px}pre[class*="language-"]{padding:1em}code[class*="language-"] .token.comment,pre[class*="language-"] .token.comment,code[class*="language-"] .token.prolog,pre[class*="language-"] .token.prolog,code[class*="language-"] .token.doctype,pre[class*="language-"] .token.doctype,code[class*="language-"] .token.cdata,pre[class*="language-"] .token.cdata{color:#5c6370}code[class*="language-"] .namespace,pre[class*="language-"] .namespace{opacity:.7}code[class*="language-"] .token.constant,pre[class*="language-"] .token.constant{color:#d19a66}code[class*="language-"] .token.boolean,pre[class*="language-"] .token.boolean,code[class*="language-"] .token.number,pre[class*="language-"] .token.number,code[class*="language-"] .token.function-name,pre[class*="language-"] .token.function-name{color:#d19a66}code[class*="language-"] .token.tag,pre[class*="language-"] .token.tag{color:#e06c75}code[class*="language-"] .token.symbol,pre[class*="language-"] .token.symbol{color:#56b6c2}code[class*="language-"] .token.selector,pre[class*="language-"] .token.selector{color:#c678dd}code[class*="language-"] .token.attr-name,pre[class*="language-"] .token.attr-name{color:#d19a66}code[class*="language-"] .token.string,pre[class*="language-"] .token.string{color:#98c379}code[class*="language-"] .token.char,pre[class*="language-"] .token.char{color:#56b6c2}code[class*="language-"] .token.url,pre[class*="language-"] .token.url{color:#56b6c2}code[class*="language-"] .token.operator,pre[class*="language-"] .token.operator{color:#abb2bf}code[class*="language-"] .token.atrule,pre[class*="language-"] .token.atrule,code[class*="language-"] .token.attr-value,pre[class*="language-"] .token.attr-value,code[class*="language-"] .token.keyword,pre[class*="language-"] .token.keyword{color:#c678dd}code[class*="language-"] .token.function,pre[class*="language-"] .token.function{color:#61afef}code[class*="language-"] .token.class-name,pre[class*="language-"] .token.class-name{color:#e5c07b}code[class*="language-"] .token.variable,pre[class*="language-"] .token.variable{color:#d19a66}code[class*="language-"] .token.regex,pre[class*="language-"] .token.regex{color:#56b6c2}code[class*="language-"] .token.important,pre[class*="language-"] .token.important{color:#e06c75}code[class*="language-"] .token.important,pre[class*="language-"] .token.important,code[class*="language-"] .token.bold,pre[class*="language-"] .token.bold{font-weight:bold}code[class*="language-"] .token.italic,pre[class*="language-"] .token.italic{font-style:italic}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:rgba(153,122,102,0.08);background:linear-gradient(to right, rgba(153,122,102,0.1) 70%, rgba(153,122,102,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:rgba(153,122,102,0.4);color:#f5f2f0;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px white}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.emoji {
+  height: 0.8em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:hsl(220,14%,71%);background-color:hsl(220,13%,18%);overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:hsl(0,0%,100%)}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:hsl(220,14%,55%)}html body strong{color:hsl(0,0%,100%)}html body del{color:hsl(220,14%,55%)}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#56b6c2;text-decoration:none}html body a:hover{color:#74c3cd;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:hsl(220,14%,55%);background-color:hsl(220,13%,26%);border-left:4px solid hsl(220,13%,34%)}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:hsl(220,13%,34%);border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:hsl(0,0%,100%)}html body table td,html body table th{border:1px solid hsl(220,13%,34%);padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:hsl(0,0%,100%);background-color:hsl(220,13%,26%);border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:hsl(220,13%,34%);border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:hsl(0,0%,100%);border:1px solid hsl(220,13%,34%);border-bottom:2px solid hsl(220,13%,28%);padding:2px 4px;background-color:hsl(220,13%,26%);border-radius:3px}@media print{html body{background-color:hsl(220,13%,18%)}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:hsl(0,0%,100%);page-break-after:avoid}html body blockquote{color:hsl(220,14%,55%)}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}@font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
@@ -511,14 +266,15 @@ pre[data-line] .line-highlight[data-end]:after {
   content: "\E244";
 }
 
-/* Please visit the URL below for more information: */
+    /* Please visit the URL below for more information: */
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <p><a href="index.html">&#x8FD4;&#x56DE;&#x4E3B;&#x9875;</a></p>
+    </style>
+    
+  </head>
+  <body for="html-export">
+    <div class="mume markdown-preview">
+    <html><head></head><body><div><p><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/index.html">&#x8FD4;&#x56DE;&#x4E3B;&#x9875;</a></p>
 
 <div class="md-toc">
 <details style="padding:0;;padding-left:0px;" open>
@@ -607,7 +363,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E7%9A%84%E5%AE%9A%E4%B9%89div"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5B9A;&#x4E49;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 25&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 25&#x6BB5;</a></p>
 <p>&#x6240;&#x4EE5;&#xFF0C;<b style="color:red">&#x671F;&#x5F85;</b>&#x662F;&#x89E6;&#x53D1;&#x7075;&#x6027;&#x5B9E;&#x76F8;&#x6210;&#x4E3A;&#x7269;&#x8D28;&#x5EFA;&#x6784;&#x7684;&#x90A3;&#x80A1;&#x529B;&#x91CF;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 <b style="color:red">expectation</b> is the force, then, that triggers psychic realities into physical construction.</details>
@@ -615,7 +371,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E7%9A%84%E5%BD%A2%E6%88%90div"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5F62;&#x6210;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 16&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 16&#x6BB5;</a></p>
 <p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BF4;&#x8FC7;&#x7075;&#x6027;&#x5EFA;&#x6784;&#xFF0C;&#x4E5F;&#x8BF4;&#x8FC7;&#x7269;&#x8D28;&#x7684;&#x5F62;&#x72B6;&#x662F;&#x5EFA;&#x7ACB;&#x5728;&#x5185;&#x5728;&#x7684;&#x7075;&#x6027;&#x67B6;&#x6784;&#x4E0A;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x60C5;&#x7EEA;&#xFF0C;&#x5728;&#x4E0D;&#x88AB;&#x5916;&#x5728;&#x611F;&#x5B98;&#x6240;&#x611F;&#x77E5;&#x7684;&#x81EA;&#x5DF1;&#x7684;&#x9886;&#x57DF;&#x91CC;&#xFF0C;&#x5219;&#x6709;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x5EA6;(solidity)&#xFF0C;&#x5F62;&#x72B6;&#xFF0C;&#x800C;&#x4F60;&#x4EEC;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b>&#x6B63;&#x662F;&#x7531;&#x8FD9;&#x4E9B;&#x5F62;&#x6210;&#x7684;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 We have already spoken of psychic constructions, and we have said that physical shapes are built upon inner psychic frameworks.Emotions then, in their own realm unperceived by the outer senses, have their own solidity, shape, and it is from these that your <b style="color:red">expectations</b> are formed.</details>
@@ -630,7 +386,7 @@ As physical objects can be manipulated, so can the emotions be manipulated, so c
 There is no getting around what I have said.Emotional power behind your <b style="color:red">expectations</b> powers your <b style="color:red">expectations</b> into physical reality.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 33&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 33&#x6BB5;</a></p>
 <p>&#x597D;&#x6597;&#x53EA;&#x662F;&#x80FD;&#x91CF;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x6307;&#x5411;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x662F;&#x65E0;&#x6548;&#x7684;&#x5B58;&#x6D3B;&#x6A21;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x653B;&#x51FB;&#x6027;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x6210;&#x529F;&#x5904;&#x7406;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x5C06;&#x81EA;&#x5DF1;&#x5F62;&#x6210;<b style="color:red">&#x671F;&#x5F85;</b>&#xFF0C;&#x7136;&#x540E;&#x5728;&#x90A3;&#x91CC;&#x91CA;&#x653E;&#x51FA;&#x5B83;&#x4EEC;&#x7684;&#x529B;&#x91CF;&#xFF0C;&#x5F62;&#x6210;&#x4E0D;&#x5E78;&#x7684;&#x5EFA;&#x6784;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Aggressions are merely the result of energy not clearly directed, invalid survival patterns.If these aggressions are not handled with some degree of success, they will form themselves into <b style="color:red">expectations</b>, where they will then let forth their power in the formation of unfortunate constructions.</details>
@@ -641,25 +397,25 @@ Aggressions are merely the result of energy not clearly directed, invalid surviv
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E7%9A%84%E6%97%A9%E6%9C%9F%E6%9D%A5%E6%BA%90%E6%98%AF%E7%88%B6%E6%AF%8Ddiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x65E9;&#x671F;&#x6765;&#x6E90;&#x662F;&#x7236;&#x6BCD;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/sirenke7/DELETE 81.txt">&#x79C1;&#x4EBA;&#x8BFE;7(8) &#x5220;&#x9664;&#x4F1A;&#x8BDD; 25&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/sirenke7/DELETE 81.txt">&#x79C1;&#x4EBA;&#x8BFE;7(8) &#x5220;&#x9664;&#x4F1A;&#x8BDD; 25&#x6BB5;</a></p>
 <p>&#x5B69;&#x5B50;&#x4EEC;&#x7684;&#x6E38;&#x620F;&#x5BF9;&#x5B69;&#x5B50;&#x7684;&#x53D1;&#x5C55;&#x6781;&#x4E3A;&#x91CD;&#x8981;--&#x5F53;&#x4ED6;&#x4EEC;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x5B69;&#x5B50;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;&#x90A3;&#x4E9B;&#x7CBE;&#x81F4;&#x7684;&#x60F3;&#x8C61;&#x529B;&#x3001;&#x4FE1;&#x5FC3;&#x548C;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x529B;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x529B;&#x91CF;&#x63D0;&#x4F9B;&#x4E86;&#x6210;&#x957F;&#x548C;&#x6210;&#x5C31;&#x7684;&#x6E90;&#x6CC9;&#x3002;(&#x505C;&#x987F;&#x3002;)&#x70ED;&#x60C5;&#x6D0B;&#x6EA2;&#x7684;&#x4EBA;&#x662F;&#x5065;&#x5EB7;&#x7684;&#x3002;&#x4ED6;&#x4EEC;&#x6B23;&#x8D4F;&#x751F;&#x6D3B;&#x7684;&#x4E30;&#x5BCC;&#x6027;&#x548C;&#x591A;&#x6837;&#x6027;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x8BB8;&#x591A;&#x5B69;&#x5B50;&#x88AB;&#x4ED6;&#x4EEC;&#x7684;&#x7236;&#x6BCD;&#x6559;&#x5BFC;&#x8981;&#x6000;&#x7591;&#x65FA;&#x76DB;&#x7684;&#x60C5;&#x7EEA;&#x548C;&#x9AD8;&#x6602;&#x7684;&#x7CBE;&#x795E;&#x3002;&#x800C;&#x88AB;&#x547D;&#x4EE4;&#x8981;&#x5B89;&#x9759;&#x3001;&#x6709;&#x793C;&#x8C8C;&#x548C;&#x987A;&#x4ECE;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Children&#x2019;s play is extremely important to a child&#x2019;s development&#x2014;and when they play children use those exquisite powers of imagination, confidence, and <b style="color:red">expectation</b> that provide the wellspring for growth and fulfillment. (Pause.) People who are exuberant are healthy. They appreciate the richness and variety of life. Many children, however, are unfortunately taught by their parents to be suspicious of exuberance and high spirits. And ordered instead to be quiet, well-mannered and obedient.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/sirenke7/DELETE 93.txt">&#x79C1;&#x4EBA;&#x8BFE;7(8) &#x5220;&#x9664;&#x90E8;&#x5206; 15&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/sirenke7/DELETE 93.txt">&#x79C1;&#x4EBA;&#x8BFE;7(8) &#x5220;&#x9664;&#x90E8;&#x5206; 15&#x6BB5;</a></p>
 <p>&#x513F;&#x7AE5;&#x62E5;&#x6709;&#x8FD9;&#x79CD;&#x9AD8;&#x5EA6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x8FD9;&#x79CD;&#x5BF9;&#x672A;&#x6765;&#x6210;&#x957F;&#x548C;&#x53D1;&#x5C55;&#x7684;&#x627F;&#x8BFA;&#xFF0C;&#x53EA;&#x8981;&#x8FD9;&#x4E9B;<b style="color:red">&#x671F;&#x671B;</b>&#x53D7;&#x5230;&#x632B;&#x6298;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x8FD9;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#xFF0C;&#x751F;&#x6D3B;&#x7684;&#x8D28;&#x91CF;&#x672C;&#x8EAB;&#x5C31;&#x4F1A;&#x88AB;&#x524A;&#x5F31;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4E16;&#x754C;&#x4E0A;&#x7684;&#x8BB8;&#x591A;&#x7EC4;&#x7EC7;&#x786E;&#x5B9E;&#x662F;&#x56F4;&#x7ED5;&#x7740;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x3001;&#x76F8;&#x53CD;&#x7684;&#x6982;&#x5FF5;&#x5F62;&#x6210;&#x7684;--&#x60F3;&#x5F53;&#x7136;&#x5730;&#x8BA4;&#x4E3A;&#x6700;&#x574F;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x800C;&#x4E0D;&#x662F;&#x6700;&#x597D;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x5C06;&#x5728;&#x5176;&#x6210;&#x5458;&#x7684;&#x751F;&#x6D3B;&#x4E2D;&#x88AB;&#x6FC0;&#x6D3B;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Children possess this high expectancy, this promise of future growth and development, and whenever those <b style="color:red">expectations</b> are discouraged, then to that extent the quality of life itself is diminished. It is true, nevertheless, that many of the world&#x2019;s organizations are formed around a completely different, opposing concept&#x2014;taking it for granted that the worst possibility rather then the best one will be activated in the lives of its members.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 342&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 342&#x6BB5;</a></p>
 <p>&#x4ECE;&#x6700;&#x65E9;&#x7684;&#x9636;&#x6BB5;&#x5F00;&#x59CB;&#xFF0C;&#x5B69;&#x5B50;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x5C06;&#x81EA;&#x5DF1;&#x5BF9;&#x5B9E;&#x76F8;&#x7684;&#x7406;&#x89E3;&#x4E0E;&#x7236;&#x6BCD;&#x7684;&#x7406;&#x89E3;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x56E0;&#x4E3A;&#x7236;&#x6BCD;&#x66F4;&#x5927;&#x66F4;&#x5F3A;&#x58EE;&#xFF0C;&#x53C8;&#x80FD;&#x6EE1;&#x8DB3;&#x4ED6;&#x7684;&#x5F88;&#x591A;&#x9700;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5B69;&#x5B50;&#x5C31;&#x4F1A;&#x52AA;&#x529B;&#x5730;&#x8BA9;&#x81EA;&#x5DF1;&#x7684;&#x4F53;&#x9A8C;&#x7B26;&#x5408;&#x7236;&#x6BCD;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x4FE1;&#x5FF5;&#x3002;&#x5F53;&#x5B69;&#x5B50;&#x53D7;&#x5230;&#x4F24;&#x5BB3;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x5F88;&#x81EA;&#x7136;&#x5730;&#x5C31;&#x4F1A;&#x54ED;&#x557C;&#x6216;&#x8005;&#x611F;&#x5230;&#x201C;&#x975E;&#x5E38;&#x96BE;&#x8FC7;&#x201D;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x503E;&#x5411;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FE1;&#x5FF5;&#x88AB;&#x5EF6;&#x4F38;&#x5230;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x957F;&#x671F;&#x7684;&#x5FE7;&#x4F24;&#x3001;&#x60B2;&#x6006;&#x611F;&#x5C31;&#x4F1A;&#x88AB;&#x5F53;&#x6210;&#x660E;&#x786E;&#x7684;&#x884C;&#x4E3A;&#x6A21;&#x5F0F;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 From the earliest stages the child automatically compares its interpretation of reality with its parents&apos;.Since the parents are bigger and stronger and fulfill so many of its needs, it will attempt to bring its experience into line with their <b style="color:red">expectations</b> and beliefs.While it is generally quite natural for the child to cry or feel &quot;badly&quot; when hurt, this inclination can be carried through belief to such an extent that prolonged feelings of desolation are adopted as definite behavior patterns.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 27&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 27&#x6BB5;</a></p>
 <p>&#x5728;&#x7269;&#x8D28;&#x7684;&#x5B9E;&#x9645;&#x5EFA;&#x6784;&#x4E2D;&#xFF0C;&#x6240;&#x6D89;&#x53CA;&#x7684;&#x673A;&#x5236;&#x90FD;&#x662F;&#x76F8;&#x4E92;&#x4EA4;&#x7EC7;&#x3001;&#x7D27;&#x5BC6;&#x76F8;&#x8FDE;&#x7684;&#x3002;&#x4F60;&#x4EEC;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x521B;&#x9020;&#x7B26;&#x5408;&#x4F60;&#x4EEC;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4F7F;&#x5176;&#x5177;&#x6709;&#x8FDE;&#x7EED;&#x6027;&#x7684;&#x5916;&#x89C2;&#xFF0C;&#x9664;&#x5176;&#x4ED6;&#x4E8B;&#x9879;&#x5916;&#xFF0C;&#x8FD8;&#x57FA;&#x4E8E;&#x8FC7;&#x53BB;&#x660E;&#x663E;&#x7684;&#x5EFA;&#x6784;&#xFF1B;&#x800C;&#x8FD9;&#x4E9B;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x662F;&#x4F60;&#x4EEC;&#x81EA;&#x5DF1;&#x548C;&#x522B;&#x4EBA;&#x4E4B;&#x95F4;&#x7075;&#x6027;&#x4EA4;&#x6D41;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x6765;&#x81EA;&#x7236;&#x6BCD;&#xFF0C;&#x4ED6;&#x4EEC;&#x7ED9;&#x5B69;&#x5B50;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x6700;&#x521D;&#x6982;&#x5FF5;&#xFF0C;&#x800C;&#x8FD9;&#x7684;&#x786E;&#x662F;&#x4ED6;&#x7684;&#x7236;&#x6BCD;&#x521B;&#x9020;&#x7684;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 The mechanisms involved in the actual construction of matter are all intertwined and closely connected.You give constructions their appearance of continuity by continually creating them in line with your <b style="color:red">expectations</b>, based upon among other things, previous constructions in the apparent past; and these <b style="color:red">expectations</b> are the result of psychic communication between yourselves and others, particularly from parents, who give the child his first conceptions of the environment which, indeed, his parents have created.</details>
@@ -673,7 +429,7 @@ In all cases constructions will follow the line of <b style="color:red">expectat
 <p class="admonition-title">&#x65E9;&#x671F;&#x8BFE;&#x4E2D;&#xFF0C;&#x8D5B;&#x65AF;&#x4F7F;&#x7528;&#x4E86;&#x8F83;&#x591A;constructs&#xFF08;&#x5EFA;&#x6784;&#xFF09;&#xFF0C;&#x5728;&#x5927;&#x4F17;&#x8BFE;&#x5F88;&#x5C11;&#x4F7F;&#x7528;</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 67.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;67&#x8282;&#x7269;&#x8D28;&#x5BA2;&#x4F53;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#x884C;&#x52A8;,&#x9650;&#x5236;&#x5F15;&#x8D77;&#x6297;&#x4E89; 76&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 67.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;67&#x8282;&#x7269;&#x8D28;&#x5BA2;&#x4F53;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#x884C;&#x52A8;,&#x9650;&#x5236;&#x5F15;&#x8D77;&#x6297;&#x4E89; 76&#x6BB5;</a></p>
 <p>&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x65F6;&#x673A;&#xFF0C;&#x6211;&#x5C06;&#x8C08;&#x53CA;<b style="color:red">&#x671F;&#x671B;</b>(<b style="color:red">expectations</b>)&#x7684;&#x597D;&#x5904;&#x548C;&#x5371;&#x9669;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x662F;&#x6F5C;&#x610F;&#x8BC6;&#x611F;&#x53D7;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5B83;&#x4E0D;&#x4EC5;&#x5411;&#x5916;&#x6295;&#x5C04;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x88AB;&#x4ED6;&#x4EBA;&#x611F;&#x77E5;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 On another occasion I will go into the benefits and dangers of <b style="color:red">expectations</b>, for these are the result of subconscious feelings, which are not only projected outward but also sensed by others.</details>
@@ -685,19 +441,19 @@ On another occasion I will go into the benefits and dangers of <b style="color:r
 <p>&#x2014;because you will understand that fearful <b style="color:red">expectations</b> greatly color your perception of reality, and your construction of it.</p></details><p></p>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 70.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;70&#x8282;&#x6015;&#x8F93;&#x5C31;&#x4E0D;&#x4F1A;&#x8D62; 27&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 70.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;70&#x8282;&#x6015;&#x8F93;&#x5C31;&#x4E0D;&#x4F1A;&#x8D62; 27&#x6BB5;</a></p>
 <p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5173;&#x6CE8;&#x7684;&#x662F;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x5982;&#x4F55;&#x5F71;&#x54CD;&#x73AF;&#x5883;&#xFF0C;&#x5F71;&#x54CD;&#x4F60;&#x4E3A;&#x81EA;&#x5DF1;&#x521B;&#x9020;&#x7684;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x3002;&#x8FD9;&#x8FDC;&#x975E;&#x76F2;&#x76EE;&#x4E50;&#x89C2;&#x7684;&#x80E1;&#x8A00;&#x4E71;&#x8BED;&#xFF0C;&#x5B83;&#x5B9E;&#x9645;&#x53EF;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x6548;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 We here have been concerned with <b style="color:red">expectation</b>, and the way it influences the environment, and the actual world that you create for yourself.This is far from Pollyanna hogwash. It is practical, and it works.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 26&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 26&#x6BB5;</a></p>
 <p>&#x5728;&#x4F60;&#x4EEC;&#x7684;&#x573A;&#x57DF;&#x91CC;&#xFF0C;&#x7269;&#x8D28;&#x5728;&#x672C;&#x8D28;&#x4E0A;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x65E0;&#x5DEE;&#x522B;&#x7684;&#xFF0C;&#x662F;&#x4EBA;&#x7C7B;&#x590D;&#x6742;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8D4B;&#x4E88;&#x4E86;&#x5B83;&#x5F62;&#x6001;&#x548C;&#x610F;&#x4E49;&#x3002;&#x6211;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x4E2A;&#x4EBA;&#x5EFA;&#x6784;&#x6709;&#x5F88;&#x5927;&#x7684;&#x5173;&#x8054;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x518D;&#x600E;&#x4E48;&#x5F3A;&#x8C03;&#x90FD;&#x4E0D;&#x4E3A;&#x8FC7;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Matter in your field is undifferentiated by nature, so to speak, and it is the complicated human abilities that give it form and meaning.I have mentioned that <b style="color:red">expectation</b> has much to do with individual constructions, and indeed this cannot be stressed too strongly.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 70&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 70&#x6BB5;</a></p>
 <p>&#x65E2;&#x7136;&#x4E2A;&#x4EBA;&#x5EFA;&#x6784;&#x4E86;&#x7269;&#x8D28;&#xFF0C;&#x5E76;&#x4E14;&#x786E;&#x5B9E;&#x5EFA;&#x6784;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x7269;&#x8D28;&#x5B87;&#x5B99;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x6539;&#x8FDB;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#xFF1B;&#x4ED6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x5EFA;&#x6784;&#x672C;&#x8EAB;&#x7684;&#x6F5C;&#x610F;&#x8BC6;&#x673A;&#x5236;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Since the individual constructs matter, and indeed constructs his own physical universe, he can improve these constructions; and his <b style="color:red">expectations</b> are intimately connected with the subconscious mechanism of construction itself.</details>
@@ -706,19 +462,19 @@ Since the individual constructs matter, and indeed constructs his own physical u
 The mind constructs into matter its own idea of reality, and this is where personal <b style="color:red">expectation</b> comes into play.You do not only create your own environment, generally speaking, you create it concretely, in forms of mass and matter.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 70.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;70&#x8282;&#x6015;&#x8F93;&#x5C31;&#x4E0D;&#x4F1A;&#x8D62; 27&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 70.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;70&#x8282;&#x6015;&#x8F93;&#x5C31;&#x4E0D;&#x4F1A;&#x8D62; 27&#x6BB5;</a></p>
 <p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5173;&#x6CE8;&#x7684;&#x662F;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x5982;&#x4F55;&#x5F71;&#x54CD;&#x73AF;&#x5883;&#xFF0C;&#x5F71;&#x54CD;&#x4F60;&#x4E3A;&#x81EA;&#x5DF1;&#x521B;&#x9020;&#x7684;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x3002;&#x8FD9;&#x8FDC;&#x975E;&#x76F2;&#x76EE;&#x4E50;&#x89C2;&#x7684;&#x80E1;&#x8A00;&#x4E71;&#x8BED;&#xFF0C;&#x5B83;&#x5B9E;&#x9645;&#x53EF;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x6548;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 We here have been concerned with <b style="color:red">expectation</b>, and the way it influences the environment, and the actual world that you create for yourself.This is far from Pollyanna hogwash. It is practical, and it works.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 26&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 72.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;72&#x8282;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#x8BFE;&#x7A0B;&#x5F00;&#x59CB;,&#x5F62;&#x6001;&#x4E0D;&#x662F;&#x7269;&#x4F53;&#x7684;&#x7279;&#x5F81; 26&#x6BB5;</a></p>
 <p>&#x5728;&#x4F60;&#x4EEC;&#x7684;&#x573A;&#x57DF;&#x91CC;&#xFF0C;&#x7269;&#x8D28;&#x5728;&#x672C;&#x8D28;&#x4E0A;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x65E0;&#x5DEE;&#x522B;&#x7684;&#xFF0C;&#x662F;&#x4EBA;&#x7C7B;&#x590D;&#x6742;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8D4B;&#x4E88;&#x4E86;&#x5B83;&#x5F62;&#x6001;&#x548C;&#x610F;&#x4E49;&#x3002;&#x6211;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x4E2A;&#x4EBA;&#x5EFA;&#x6784;&#x6709;&#x5F88;&#x5927;&#x7684;&#x5173;&#x8054;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x518D;&#x600E;&#x4E48;&#x5F3A;&#x8C03;&#x90FD;&#x4E0D;&#x4E3A;&#x8FC7;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Matter in your field is undifferentiated by nature, so to speak, and it is the complicated human abilities that give it form and meaning.I have mentioned that <b style="color:red">expectation</b> has much to do with individual constructions, and indeed this cannot be stressed too strongly.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 70&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 70&#x6BB5;</a></p>
 <p>&#x65E2;&#x7136;&#x4E2A;&#x4EBA;&#x5EFA;&#x6784;&#x4E86;&#x7269;&#x8D28;&#xFF0C;&#x5E76;&#x4E14;&#x786E;&#x5B9E;&#x5EFA;&#x6784;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x7269;&#x8D28;&#x5B87;&#x5B99;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x6539;&#x8FDB;&#x8FD9;&#x4E9B;&#x6784;&#x5EFA;&#xFF1B;&#x4ED6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x5EFA;&#x6784;&#x672C;&#x8EAB;&#x7684;&#x6F5C;&#x610F;&#x8BC6;&#x673A;&#x5236;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Since the individual constructs matter, and indeed constructs his own physical universe, he can improve these constructions; and his <b style="color:red">expectations</b> are intimately connected with the subconscious mechanism of construction itself.</details>
@@ -727,61 +483,61 @@ Since the individual constructs matter, and indeed constructs his own physical u
 The mind constructs into matter its own idea of reality, and this is where personal <b style="color:red">expectation</b> comes into play.You do not only create your own environment, generally speaking, you create it concretely, in forms of mass and matter.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 75.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;75&#x8282;&#x610F;&#x8BC6;&#x7684;&#x5FC3;&#x7406;&#x7ED3;&#x6784;,&#x610F;&#x8BC6;&#x5B58;&#x6D3B; 47&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 75.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;75&#x8282;&#x610F;&#x8BC6;&#x7684;&#x5FC3;&#x7406;&#x7ED3;&#x6784;,&#x610F;&#x8BC6;&#x5B58;&#x6D3B; 47&#x6BB5;</a></p>
 <p>&#x6211;&#x6B63;&#x5728;&#x5F15;&#x51FA;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x5728;&#x6784;&#x5EFA;&#x4F60;&#x4EEC;&#x7684;&#x7269;&#x8D28;&#x73AF;&#x5883;&#x4E2D;&#x6240;&#x626E;&#x6F14;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x4F46;&#x73B0;&#x5728;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x6709;&#x5FC5;&#x8981;&#x4E8B;&#x5148;&#x5411;&#x4F60;&#x4EEC;&#x89E3;&#x91CA;&#x5FC3;&#x7406;&#x89C6;&#x89D2;&#x4E86;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 I am leading up to the part that <b style="color:red">expectation</b> plays in the construction of your physical environment, but you can see now why it was necessary that I explain the psychological perspective to you beforehand.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/EVS/SESSION 527.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;527&#x8282; 34&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/EVS/SESSION 527.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;527&#x8282; 34&#x6BB5;</a></p>
 <p>&#x8FD9;&#x5C06;&#x601D;&#x60F3;&#x4E0E;&#x60C5;&#x611F;&#x5177;&#x4F53;&#x5316;&#x6210;&#x4E3A;&#x7269;&#x8D28;&#x5B9E;&#x76F8;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x662F;&#x7075;&#x9B42;&#x7684;&#x4E00;&#x79CD;&#x5C5E;&#x6027;&#x3002;&#x73B0;&#x5728;&#x5728;&#x4F60;&#x7684;&#x5B9E;&#x76F8;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x601D;&#x60F3;&#x88AB;&#x9020;&#x6210;&#x5B9E;&#x8D28;&#x3002;&#x5728;&#x5176;&#x4ED6;&#x7684;&#x5B9E;&#x76F8;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x4EE5;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x201C;&#x88AB;&#x5EFA;&#x6784;&#x201D;&#x3002;&#x56E0;&#x6B64;&#x4F60;&#x7684;&#x7075;&#x9B42;&#xFF0C;&#x5373;&#x4F60;&#xFF0C;&#x4ECE;&#x4F60;&#x601D;&#x60F3;&#x4E0E;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x672C;&#x8D28;&#x5EFA;&#x6784;&#x51FA;&#x4F60;&#x5B9E;&#x8D28;&#x7684;&#x6BCF;&#x65E5;&#x5B9E;&#x76F8;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 This characteristic of materializing thoughts and feelings into physical realities is an attribute of the soul. Now in your reality, these thoughts are made physical. In other realities, they may be &#x201C;constructed&#x201D; in an entirely different fashion. So your soul, that which you are, constructs your physical daily reality for you from the nature of your thoughts and <b style="color:red">expectations</b>.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/EVS/SESSION 538.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;538&#x8282; 34&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/EVS/SESSION 538.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;538&#x8282; 34&#x6BB5;</a></p>
 <p>(10:54)&#x6362;&#x8A00;&#x4E4B;&#xFF0C;&#x4F60;&#x7684;&#x7ECF;&#x9A8C;&#x8DDF;&#x968F;&#x7740;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x8D70;&#x3002;&#x5728;&#x6B7B;&#x540E;&#x4E0E;&#x68A6;&#x4E2D;&#x7ECF;&#x9A8C;&#x4EE5;&#x53CA;&#x4EFB;&#x4F55;&#x201C;&#x51FA;&#x4F53;&#x201D;&#x7684;&#x906D;&#x9047;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x4E5F;&#x9002;&#x7528;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6267;&#x8FF7;&#x4E8E;&#x6076;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x90A3;&#x4F60;&#x5C31;&#x4F1A;&#x78B0;&#x4E0A;&#x6076;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5982;&#x679C;&#x4F60;&#x76F8;&#x4FE1;&#x9B54;&#x9B3C;&#xFF0C;&#x90A3;&#x4F60;&#x5C31;&#x4F1A;&#x78B0;&#x89C1;&#x5B83;&#x3002;&#x5982;&#x6211;&#x5148;&#x524D;&#x63D0;&#x8FC7;&#x7684;&#xFF0C;&#x5F53;&#x610F;&#x8BC6;&#x4E0D;&#x662F;&#x9488;&#x5BF9;&#x7740;&#x8089;&#x4F53;&#x65F6;&#xFF0C;&#x5B83;&#x6709;&#x66F4;&#x5927;&#x7684;&#x81EA;&#x7531;&#x3002;&#x518D;&#x8BF4;&#x4E00;&#x6B21;&#xFF0C;&#x601D;&#x60F3;&#x548C;&#x611F;&#x60C5;&#x4E0D;&#x9700;&#x7ECF;&#x8FC7;&#x65F6;&#x95F4;&#x7684;&#x6D41;&#x901D;&#x5C31;&#x5EFA;&#x6784;&#x4E3A;&#x5B9E;&#x76F8;&#x3002;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x4F60;&#x76F8;&#x4FE1;&#x81EA;&#x5DF1;&#x4F1A;&#x9047;&#x4E0A;&#x4E00;&#x4E2A;&#x6076;&#x9B54;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x521B;&#x9020;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x201C;&#x5FC3;&#x5FF5;&#x5F62;&#x76F8;&#x201D;&#x6765;&#xFF0C;&#x5374;&#x4E0D;&#x77E5;&#x5B83;&#x4E43;&#x662F;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x521B;&#x9020;&#x7269;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 (10:54.) Your experience, in other words, follows your <b style="color:red">expectations</b>. Now the same applies to after-death experience and to the dream experience, and to any out-of-body encounters. If you are obsessed with the idea of evil, then you will meet evil conditions. If you believe in devils, then you will encounter these. As I mentioned earlier, there is greater freedom when consciousness is not physically directed. Thoughts and feelings are constructed, again, into reality without the physical time lapse. So if you believe you will be met by a demon, you will create your own thought form of one, not realizing that it is of your own creation.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/EVS/SESSION 539.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;539&#x8282; 23&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/EVS/SESSION 539.txt">&#x7075;&#x9B42;&#x6C38;&#x6052;(7) &#x7B2C;539&#x8282; 23&#x6BB5;</a></p>
 <p>(10:01)&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF1A;&#x6211;&#x544A;&#x8BC9;&#x8FC7;&#x4F60;&#xFF0C;&#x65F6;&#x95F4;&#x5E76;&#x4E0D;&#x662F;&#x7531;&#x4E00;&#x8FDE;&#x4E32;&#x4E00;&#x4E2A;&#x63A5;&#x7740;&#x53E6;&#x4E00;&#x4E2A;&#x7684;&#x201C;&#x7247;&#x523B;&#x201D;&#x6240;&#x7EC4;&#x6210;&#xFF0C;&#x867D;&#x7136;&#x4F60;&#x73B0;&#x5728;&#x662F;&#x4EE5;&#x90A3;&#x79CD;&#x65B9;&#x5F0F;&#x611F;&#x77E5;&#x5B83;&#x3002;&#x4E8B;&#x4EF6;&#x4E5F;&#x4E0D;&#x662F;&#x53D1;&#x751F;&#x5728;&#x4F60;&#x8EAB;&#x4E0A;&#x7684;&#x4E8B;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x4F60;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x4FE1;&#x5FF5;&#x9020;&#x6210;&#x7684;&#x5177;&#x4F53;&#x5316;&#x4E86;&#x7684;&#x7ECF;&#x9A8C;&#x3002;&#x73B0;&#x5728;&#x4F60;&#x4EBA;&#x683C;&#x7684;&#x5185;&#x5728;&#x90E8;&#x5206;&#x5C31;&#x77E5;&#x9053;&#x6B64;&#x70B9;&#x3002;&#x6B7B;&#x540E;&#x4F60;&#x4E0D;&#x518D;&#x805A;&#x7126;&#x4E8E;&#x53D7;&#x65F6;&#x95F4;&#x548C;&#x4E8B;&#x4EF6;&#x5F71;&#x54CD;&#x7684;&#x7269;&#x8D28;&#x5F62;&#x76F8;&#x3002;&#x4F60;&#x53EF;&#x7528;&#x540C;&#x6837;&#x7684;&#x65F6;&#x95F4;&#x4E0E;&#x4E8B;&#x4EF6;&#x4E3A;&#x539F;&#x6599;&#xFF0C;&#x50CF;&#x753B;&#x5BB6;&#x7528;&#x989C;&#x8272;&#x4E00;&#x6837;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 (10:01.) For example: I told you time does not consist of a series of moments, one before the other, though you do perceive it now in that fashion. Events are not things that happen to you. They are materialized experiences formed by you according to your <b style="color:red">expectations</b> and beliefs. Inner portions of your personality realize this now. After death you will not concentrate upon the physical forms taken by time and events. You may use the same elements, as a painter might use his colors.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2&#x6BB5;</a></p>
 <p>&#x4F53;&#x9A8C;&#x662F;&#x5FC3;&#x667A;&#x3001;&#x7CBE;&#x795E;&#x3001;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x601D;&#x60F3;&#x4E0E;&#x611F;&#x53D7;&#xFF0C;&#x4EE5;&#x53CA;&#x65E0;&#x610F;&#x8BC6;&#x7684;&#x601D;&#x60F3;&#x4E0E;&#x611F;&#x53D7;&#x7684;&#x7EFC;&#x5408;&#x4EA7;&#x7269;&#x3002;&#x8FD9;&#x4E9B;&#x5171;&#x540C;&#x6784;&#x6210;&#x4E86;&#x4F60;&#x4EEC;&#x6240;&#x77E5;&#x9053;&#x7684;&#x5B9E;&#x76F8;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x5B9E;&#x76F8;&#x91CC;&#xFF0C;&#x4F60;&#x5E76;&#x4E0D;&#x662F;&#x542C;&#x5929;&#x7531;&#x547D;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#xFF0C;&#x547D;&#x8FD0;&#x4E0D;&#x662F;&#x8131;&#x79BB;&#x4F60;&#x800C;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x88AB;&#x5F3A;&#x52A0;&#x5728;&#x4F60;&#x8EAB;&#x4E0A;&#x7684;&#x3002;&#x4F60;&#x4E0E;&#x6784;&#x6210;&#x4F60;&#x4EEC;&#x751F;&#x547D;&#x4F53;&#x9A8C;&#x7684;&#x7269;&#x8D28;&#x6027;&#x4E8B;&#x4EF6;&#x5982;&#x6B64;&#x7D27;&#x5BC6;&#x5730;&#x8054;&#x7CFB;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x4F60;&#x5E38;&#x5E38;&#x65E0;&#x6CD5;&#x533A;&#x5206;&#x8868;&#x9762;&#x4E0A;&#x7684;&#x7269;&#x8D28;&#x4E8B;&#x4EF6;&#x548C;&#x90A3;&#x4E9B;&#x5B55;&#x80B2;&#x5B83;&#x4EEC;&#x7684;&#x601D;&#x60F3;&#x3001;<b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x6B32;&#x671B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x8054;&#x6027;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Experience is the product of the mind, the spirit, conscious thoughts and feelings, and unconscious thoughts and feelings.These together form the reality that you know.You are hardly at the mercy of a reality, therefore, that exists apart from yourself, or is thrust upon you.You are so intimately connected with the physical events composing your life experience that often you cannot distinguish between the seemingly material occurrences and the thoughts, <b style="color:red">expectations</b> and desires that gave them birth.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 6&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 6&#x6BB5;</a></p>
 <p>&#x4F60;&#x4E4B;&#x6240;&#x4EE5;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x610F;&#x8BC6;&#x5FC3;&#xFF0C;&#x662F;&#x6709;&#x7740;&#x5145;&#x5206;&#x539F;&#x56E0;&#x7684;&#x3002;&#x5728;&#x65E5;&#x5E38;&#x7684;&#x751F;&#x6D3B;&#x4E2D;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x6709;&#x610F;&#x8BC6;&#x5730;&#x9ED8;&#x8BB8;&#x4E8B;&#x60C5;&#x7684;&#x53D1;&#x751F;&#xFF0C;&#x5426;&#x5219;&#x4F60;&#x4E0D;&#x4F1A;&#x53D7;&#x4EFB;&#x4F55;&#x65E0;&#x610F;&#x8BC6;&#x9A71;&#x4F7F;&#x7684;&#x6446;&#x5E03;&#x3002;&#x4F60;&#x5F53;&#x4E0B;&#x7684;&#x611F;&#x53D7;&#x548C;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x603B;&#x662F;&#x53EF;&#x4EE5;&#x62FF;&#x6765;&#x68C0;&#x9A8C;&#x4F60;&#x7684;&#x8FDB;&#x5C55;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x559C;&#x6B22;&#x4F60;&#x5F53;&#x524D;&#x7684;&#x5883;&#x9047;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5FC5;&#x987B;&#x8981;&#x6539;&#x53D8;&#x4F60;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x5FC3;&#x5FF5;&#x548C;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x6027;&#x8D28;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x6539;&#x53D8;&#x4F60;&#x6B63;&#x5728;&#x901A;&#x8FC7;&#x4F60;&#x7684;&#x601D;&#x60F3;&#x5411;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8EAB;&#x4F53;&#xFF0C;&#x4EE5;&#x53CA;&#x5411;&#x4F60;&#x7684;&#x670B;&#x53CB;&#x6216;&#x540C;&#x4E8B;&#x6240;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x606F;&#x7C7B;&#x578B;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 You have the conscious mind for a good reason.You are not at the mercy of unconscious drives unless you consciously acquiesce to them.Your present feelings and <b style="color:red">expectations</b> can always be used to check your progress.If you do not like your experience, then you must change the nature of your conscious thoughts and <b style="color:red">expectations</b>.You must alter the kind of messages that you are sending through your thoughts to your own body, to friends and associates.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 21&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 21&#x6BB5;</a></p>
 <p>&#x4F60;&#x770B;&#x5230;&#x548C;&#x611F;&#x53D7;&#x5230;&#x4F60;<b style="color:red">&#x671F;&#x671B;</b>&#x770B;&#x5230;&#x548C;&#x611F;&#x53D7;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x4F60;&#x6240;&#x77E5;&#x9053;&#x7684;&#x4E16;&#x754C;&#x5C31;&#x662F;&#x4E00;&#x5E45;&#x7531;&#x4F60;&#x6240;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x613F;&#x666F;&#x63CF;&#x6479;&#x51FA;&#x6765;&#x7684;&#x56FE;&#x753B;&#x3002;&#x4EBA;&#x7C7B;&#x6240;&#x77E5;&#x9053;&#x7684;&#x8FD9;&#x6574;&#x4E2A;&#x4E16;&#x754C;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x4F60;&#x4EEC;&#x6BCF;&#x4E00;&#x4E2A;&#x4EBA;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x7EFC;&#x5408;&#x4E4B;&#x540E;&#x6574;&#x4F53;&#x6027;&#x7684;&#x5177;&#x4F53;&#x5316;&#x3002;&#x6B63;&#x5982;&#x5A74;&#x513F;&#x662F;&#x7531;&#x4F60;&#x4EEC;&#x7684;&#x8EAB;&#x4F53;&#x7EC4;&#x7EC7;&#x800C;&#x6765;&#x4E00;&#x6837;&#xFF0C;&#x6574;&#x4E2A;&#x4E16;&#x754C;&#x4E5F;&#x662F;&#x7531;&#x4F60;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x4EBA;&#x5171;&#x540C;&#x521B;&#x9020;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 You see and feel what you expect to see and feel.The world as you know it is a picture of your <b style="color:red">expectations</b>.The world as the race of man knows it is the materialization en masse of your individual <b style="color:red">expectations</b>.As children come from your physical tissues, so is the world your joint creation.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 68&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 68&#x6BB5;</a></p>
 <p>&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x4F60;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x4FE1;&#x5FF5;&#x548C;&#x5B9E;&#x76F8;&#x7684;&#x672C;&#x8D28;&#x6765;&#x521B;&#x9020;&#x4F60;&#x7684;&#x4F53;&#x9A8C;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x7406;&#x89E3;&#x8FD9;&#x4E00;&#x70B9;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x8BA4;&#x8BC6;&#x5230;&#x4F60;&#x662F;&#x901A;&#x8FC7;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x800C;&#x521B;&#x9020;&#x4E86;&#x4F60;&#x7684;&#x4F53;&#x9A8C;&#x3002;&#x4F60;&#x7684;&#x201C;&#x611F;&#x89C9;&#x57FA;&#x8C03;&#x201D;&#x5C31;&#x662F;&#x4F60;&#x5BF9;&#x81EA;&#x5DF1;&#x4EE5;&#x53CA;&#x5BF9;&#x751F;&#x6D3B;&#x603B;&#x4F53;&#x4E0A;&#x7684;&#x60C5;&#x611F;&#x6001;&#x5EA6;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x60C5;&#x611F;&#x6001;&#x5EA6;&#x901A;&#x5E38;&#x5728;&#x5F88;&#x5927;&#x8303;&#x56F4;&#x91CC;&#x5DE6;&#x53F3;&#x7740;&#x4F60;&#x7684;&#x4F53;&#x9A8C;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Basically you create your experience through your beliefs about yourself and the nature of reality.Another way to understand this is to realize that you create your experiences through your <b style="color:red">expectations</b>.Your feeling-tones are your emotional attitudes toward yourself and life in general, and these generally govern the large areas of experience.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 105&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 105&#x6BB5;</a></p>
 <p>&#x4F60;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;&#x4FE1;&#x5FF5;&#x548C;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x7F16;&#x7EC7;&#x51FA;&#x4E86;&#x4F60;&#x81EA;&#x5DF1;&#x7528;&#x6765;&#x4F53;&#x9A8C;&#x7684;&#x9526;&#x7EE3;&#x534E;&#x88F3;&#x3002;&#x8FD9;&#x4E9B;&#x5173;&#x4E8E;&#x4F60;&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x77E5;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x5BF9;&#x5B9E;&#x76F8;&#x672C;&#x7136;&#x7684;&#x8BA4;&#x77E5;&#xFF0C;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x60F3;&#x548C;&#x60C5;&#x611F;&#x3002;&#x4F60;&#x628A;&#x4F60;&#x81EA;&#x5DF1;&#x5BF9;&#x5B9E;&#x76F8;&#x7684;&#x4FE1;&#x5FF5;&#x5F53;&#x6210;&#x4E86;&#x771F;&#x7406;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x5E38;&#x4E0D;&#x4F1A;&#x53BB;&#x8D28;&#x7591;&#x5B83;&#x4EEC;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x770B;&#x8D77;&#x6765;&#x4F3C;&#x4E4E;&#x662F;&#x90A3;&#x4E48;&#x7684;&#x771F;&#x5B9E;&#x53EF;&#x4FE1;&#xFF0C;&#x4E14;&#x7406;&#x6240;&#x5F53;&#x7136;&#x3002;&#x5B83;&#x4EEC;&#x5728;&#x4F60;&#x7684;&#x8111;&#x6D77;&#x91CC;&#x4EE5;&#x4E8B;&#x5B9E;&#x9648;&#x8FF0;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF0C;&#x6761;&#x7406;&#x6E05;&#x6670;&#x4E14;&#x5C42;&#x6B21;&#x5206;&#x660E;&#xFF0C;&#x6E05;&#x6670;&#x5230;&#x4F60;&#x8FDE;&#x5BA1;&#x89C6;&#x4E00;&#x4E0B;&#x90FD;&#x89C9;&#x5F97;&#x662F;&#x591A;&#x6B64;&#x4E00;&#x4E3E;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 You form the fabric of your experience through your own beliefs and <b style="color:red">expectations</b>.These personal ideas about yourself and the nature of reality will affect your thoughts and emotions.You take your beliefs about reality as truth, and often do not question them.They seem self-explanatory.They appear in your mind as statements of fact, far too obvious for examination.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 831&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 831&#x6BB5;</a></p>
 <p>&#x4F60;&#x4EEC;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x5FC3;&#x5FF5;&#x3001;<b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x4FE1;&#x5FF5;&#xFF0C;&#x6307;&#x5BFC;&#x7740;&#x7EC6;&#x80DE;&#x7684;&#x5065;&#x5EB7;&#x548C;&#x6D3B;&#x52A8;&#xFF0C;&#x4F7F;&#x5176;&#x968F;&#x5C81;&#x6708;&#x4E4B;&#x6CB3;&#x2014;&#x2014;&#x6CA7;&#x6851;&#x8F6E;&#x8F6C;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Your conscious ideas, <b style="color:red">expectations</b> and beliefs direct the health and activity of the cells.Period.</details>
@@ -804,7 +560,7 @@ beliefs are strong ideas about the nature of reality.</li>
 <h3 class="mume-header" id="%E6%94%B9%E5%8F%98b-stylecolorred%E6%9C%9F%E6%9C%9Bb%E7%9A%84%E8%B5%B7%E7%82%B9%E6%98%AF%E6%94%B9%E5%8F%98%E5%9F%BA%E6%9C%AC%E6%83%85%E7%BB%AA">&#x6539;&#x53D8;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x8D77;&#x70B9;&#x662F;&#x6539;&#x53D8;&#x57FA;&#x672C;&#x60C5;&#x7EEA;</h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 31&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 31&#x6BB5;</a></p>
 <span>
 &#x4ED6;&#x7684;&#x80FD;&#x529B;&#x751A;&#x81F3;&#x53EF;&#x80FD;&#x63D0;&#x9AD8;&#x3002;&#x65E2;&#x7136;&#x6211;&#x8BF4;&#x8FC7;&#xFF0C;<b style="color:red">&#x671F;&#x5F85;</b>&#x662F;&#x7531;&#x60C5;&#x7EEA;&#x5F62;&#x6210;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x663E;&#x7136;&#xFF0C;&#x5FC5;&#x987B;&#x64CD;&#x7EB5;&#x7684;&#x662F;&#x57FA;&#x672C;&#x60C5;&#x7EEA;&#x672C;&#x8EAB;&#xFF0C;&#x56E0;&#x4E3A;<b style="color:red">&#x671F;&#x5F85;</b>&#x662F;&#x7531;&#x60C5;&#x7EEA;&#x5F62;&#x6210;&#x7684;&#x67B6;&#x6784;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x8D77;&#x70B9;&#x3002;
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
@@ -814,7 +570,7 @@ It may even improve.Since I have said that <b style="color:red">expectations</b>
 If he manipulates that heritage well, then his <b style="color:red">expectations</b> will work for him.The emotions are to be used and enjoyed as psychic building blocks.There is no law, however, stating that a man cannot instead throw these blocks to the winds and hope that when they fall down they might possibly fall into a castle.</details>
 </span></div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 44&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF; 44&#x6BB5;</a></p>
 <p>&#x867D;&#x7136;&#x4F60;&#x4EEC;&#x7684;&#x8BB8;&#x591A;<b style="color:red">&#x671F;&#x5F85;</b>&#x662F;&#x5728;&#x7AE5;&#x5E74;&#x65F6;&#x671F;&#x5F62;&#x6210;&#x7684;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x5F00;&#x5173;&#x662F;&#x771F;&#x6B63;&#x5361;&#x5728;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E0A;&#xFF0C;&#x628A;&#x4F60;&#x7684;&#x60C5;&#x7EEA;&#x80FD;&#x91CF;&#x5F15;&#x5BFC;&#x5230;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x4EFB;&#x4F55;&#x884C;&#x52A8;&#x6A21;&#x5F0F;&#x4E0A;&#xFF0C;&#x662F;&#x4F60;&#x7684;&#x7279;&#x6743;&#x3002;&#x63A2;&#x7A76;&#x548C;&#x53D1;&#x73B0;&#x4F60;&#x76EE;&#x524D;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b>&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x5373;&#x4F7F;&#x5F88;&#x56F0;&#x96BE;&#xFF0C;&#x4E5F;&#x662F;&#x6781;&#x5176;&#x91CD;&#x8981;&#x7684;&#x3002;&#x4E0D;&#x662F;&#x4F60;&#x7684;&#x6B32;&#x671B;&#xFF0C;&#x800C;&#x662F;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b>&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x53EA;&#x4F1A;&#x5728;&#x7269;&#x8D28;&#x4E0A;&#x5EFA;&#x6784;&#x4F60;&#x8BA4;&#x4E3A;&#x4F60;&#x6709;&#x80FD;&#x529B;&#x6784;&#x5EFA;&#x7684;&#x73AF;&#x5883;&#x3002;&#x6709;&#x4EBA;&#x8BF4;&#xFF0C;&#x4EBA;&#x4EEC;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b>&#x5E38;&#x5E38;&#x9AD8;&#x8FC7;&#x4ED6;&#x4EEC;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x4F46;&#x5176;&#x5B9E;&#x662F;&#xFF0C;<b style="color:red">&#x671F;&#x5F85;</b>&#x5F62;&#x6210;&#x80FD;&#x529B;&#xFF1B;&#x5982;&#x679C;<b style="color:red">&#x671F;&#x5F85;</b>&#x66F4;&#x9AD8;&#xFF0C;&#x80FD;&#x529B;&#x4E5F;&#x4F1A;&#x66F4;&#x5174;&#x65FA;&#x53D1;&#x8FBE;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 While many of your <b style="color:red">expectations</b> are formed in childhood, no switch is really stuck in one position, and it is your prerogative to channel your emotional energy into whatever pattern for action you desire.It is extremely important, if difficult, to probe and to discover exactly what your present <b style="color:red">expectations</b> are.Not your desires but your <b style="color:red">expectations</b>, for you will only construct physically that environment which you believe capable of construction.It has been said that oftentimes men&#x2019;s <b style="color:red">expectations</b> are too high for their abilities, but indeed <b style="color:red">expectations</b> form abilities:and if <b style="color:red">expectations</b> were higher, so would abilities flourish.</details>
@@ -822,7 +578,7 @@ While many of your <b style="color:red">expectations</b> are formed in childhood
 <h3 class="mume-header" id="%E6%9C%89%E6%84%8F%E8%AF%86%E7%9A%84%E6%AC%B2%E6%9C%9B%E5%BF%85%E9%A1%BB%E4%B8%8E%E6%BD%9C%E6%84%8F%E8%AF%86%E7%9A%84b-stylecolorred%E6%9C%9F%E6%9C%9Bb%E4%B8%80%E8%87%B4">&#x6709;&#x610F;&#x8BC6;&#x7684;&#x6B32;&#x671B;&#x5FC5;&#x987B;&#x4E0E;&#x6F5C;&#x610F;&#x8BC6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E00;&#x81F4;</h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 81.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;81&#x8282;&#x6CA1;&#x6709;&#x795E;&#x7075;,&#x7075;&#x6027;&#x64CD;&#x7EB5;,&#x4E0A;&#x5E1D;&#x7684;&#x6982;&#x5FF5; 16&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 81.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;81&#x8282;&#x6CA1;&#x6709;&#x795E;&#x7075;,&#x7075;&#x6027;&#x64CD;&#x7EB5;,&#x4E0A;&#x5E1D;&#x7684;&#x6982;&#x5FF5; 16&#x6BB5;</a></p>
 <p>&#x9996;&#x5148;&#xFF0C;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x6B32;&#x671B;&#x5FC5;&#x987B;&#x4E0E;&#x6F5C;&#x610F;&#x8BC6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E00;&#x81F4;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x53D7;&#x6F5C;&#x610F;&#x8BC6;&#x7684;&#x53CD;&#x5BF9;&#x3002;&#x7B2C;&#x4E8C;&#xFF0C;&#x5FC5;&#x987B;&#x91CA;&#x653E;&#x51FA;&#x8DB3;&#x591F;&#x7684;&#x60C5;&#x7EEA;&#x63A8;&#x529B;&#xFF0C;&#x8FD9;&#x5C06;&#x662F;&#x5728;&#x6F5C;&#x610F;&#x8BC6;&#x5C42;&#x6B21;&#x6216;&#x6765;&#x81EA;&#x6F5C;&#x610F;&#x8BC6;&#x5C42;&#x6B21;&#x3002;&#x7B2C;&#x4E09;&#xFF0C;&#x610F;&#x8BC6;&#x548C;&#x6F5C;&#x610F;&#x8BC6;&#x4E4B;&#x95F4;&#x7684;&#x6C9F;&#x901A;&#xFF0C;&#x6216;&#x6574;&#x4F53;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5728;&#x4E0E;&#x6240;&#x8C13;&#x7684;&#x5916;&#x5728;&#x90E8;&#x5206;&#x7684;&#x6C9F;&#x901A;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x6770;&#x51FA;&#x4F18;&#x79C0;&#x7684;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 First of all, the conscious desires must be in league with, and unopposed by, subconscious <b style="color:red">expectations</b>.Two, sufficient emotional impetus must be discharged, and this will be on or from subconscious levels.And three, communication between the conscious and subconscious, or the inner and so-called outer parts of the whole self, must be excellent.</details>
@@ -837,7 +593,7 @@ If this is the case then the seemingly desired end is not really either desired 
 Because his conscious desire was based strongly upon inner emotional need, and not opposed to it, and because the emotional need at that time was powerful, that is his need to leave on vacation, and because he remembered our discussion on <b style="color:red">expectation</b>, he was able to utilize both conscious and unconscious energies.In other words, to consciously focus his subconscious psychic abilities to perform toward a definite, material end.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 81.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;81&#x8282;&#x6CA1;&#x6709;&#x795E;&#x7075;,&#x7075;&#x6027;&#x64CD;&#x7EB5;,&#x4E0A;&#x5E1D;&#x7684;&#x6982;&#x5FF5; 19&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 81.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;81&#x8282;&#x6CA1;&#x6709;&#x795E;&#x7075;,&#x7075;&#x6027;&#x64CD;&#x7EB5;,&#x4E0A;&#x5E1D;&#x7684;&#x6982;&#x5FF5; 19&#x6BB5;</a></p>
 <p>&#x56E0;&#x4E3A;&#x4ED6;&#x6709;&#x610F;&#x8BC6;&#x7684;&#x6B32;&#x671B;&#x662F;&#x5F3A;&#x70C8;&#x5730;&#x57FA;&#x4E8E;&#x5185;&#x5728;&#x7684;&#x60C5;&#x7EEA;&#x9700;&#x6C42;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E0E;&#x4E4B;&#x76F8;&#x80CC;&#xFF0C;&#x800C;&#x4E14;&#x5F53;&#x65F6;&#x7684;&#x60C5;&#x7EEA;&#x9700;&#x6C42;&#x662F;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4ED6;&#x60F3;&#x8981;&#x51FA;&#x53BB;&#x5EA6;&#x5047;&#x7684;&#x6B32;&#x671B;&#xFF0C;&#x800C;&#x4E14;&#x4ED6;&#x8FD8;&#x8BB0;&#x5F97;&#x6211;&#x4EEC;&#x5173;&#x4E8E;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x6240;&#x4EE5;&#x4ED6;&#x80FD;&#x591F;&#x5229;&#x7528;&#x6709;&#x610F;&#x8BC6;&#x548C;&#x65E0;&#x610F;&#x8BC6;&#x7684;&#x80FD;&#x91CF;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x6709;&#x610F;&#x8BC6;&#x5730;&#x96C6;&#x4E2D;&#x4ED6;&#x6F5C;&#x610F;&#x8BC6;&#x7684;&#x7075;&#x6027;&#x80FD;&#x529B;&#xFF0C;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Because his conscious desire was based strongly upon inner emotional need, and not opposed to it, and because the emotional need at that time was powerful, that is his need to leave on vacation, and because he remembered our discussion on <b style="color:red">expectation</b>, he was able to utilize both conscious and unconscious energies.In other words, to consciously focus his subconscious psychic abilities to perform toward a definite, material end.</details>
@@ -845,31 +601,31 @@ Because his conscious desire was based strongly upon inner emotional need, and n
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E5%92%8C%E6%9A%97%E7%A4%BA%E7%9A%84%E5%85%B3%E7%B3%BBdiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x6697;&#x793A;&#x7684;&#x5173;&#x7CFB;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 159.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;159&#x8282; &#x6BD4;&#x5C14;&#x7684;&#x6E83;&#x75A1; &#x5F71;&#x54CD;&#x75BE;&#x75C5;&#x7684;&#x56E0;&#x7D20; 54&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 159.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;159&#x8282; &#x6BD4;&#x5C14;&#x7684;&#x6E83;&#x75A1; &#x5F71;&#x54CD;&#x75BE;&#x75C5;&#x7684;&#x56E0;&#x7D20; 54&#x6BB5;</a></p>
 <p>&#x6211;&#x4EEC;&#x7684;&#x8D44;&#x6599;&#x66FE;&#x63D0;&#x53CA;&#x7269;&#x8D28;&#x5B87;&#x5B99;&#x548C;&#x7269;&#x8D28;&#x5EFA;&#x6784;&#x7684;&#x4E00;&#x822C;&#x72B6;&#x51B5;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x73B0;&#x5728;&#x6216;&#x8BB8;&#x5C31;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x4EEC;&#x77E5;&#x9053;&#x6697;&#x793A;&#x6709;&#x591A;&#x4E48;&#x91CD;&#x8981;&#x3002;&#x4E5F;&#x4ED4;&#x7EC6;&#x60F3;&#x60F3;&#x6211;&#x4EEC;&#x6709;&#x5173;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x56E0;&#x4E3A;&#x5C31;&#x7528;&#x8BED;&#x6765;&#x8BF4;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#x8FD9;&#x4E2A;&#x8BCD;&#x771F;&#x7684;&#x6BD4;&#x6697;&#x793A;&#x66F4;&#x4E3A;&#x8D34;&#x8FD1;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Our material concerning the construction of the physical universe and of physical matter in general may now, perhaps, give you an idea of how important suggestion is.Also consider our material on <b style="color:red">expectation</b>, for indeed <b style="color:red">expectation</b> comes closer, as a term, than does suggestion.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 159.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;159&#x8282; &#x6BD4;&#x5C14;&#x7684;&#x6E83;&#x75A1; &#x5F71;&#x54CD;&#x75BE;&#x75C5;&#x7684;&#x56E0;&#x7D20; 55&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 159.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;159&#x8282; &#x6BD4;&#x5C14;&#x7684;&#x6E83;&#x75A1; &#x5F71;&#x54CD;&#x75BE;&#x75C5;&#x7684;&#x56E0;&#x7D20; 55&#x6BB5;</a></p>
 <p>&#x6211;&#x4EEC;&#x80FD;&#x91CF;&#x7684;&#x7126;&#x70B9;&#x6781;&#x5176;&#x91CD;&#x8981;&#xFF0C;&#x4F60;&#x6211;&#x90FD;&#x4E00;&#x6837;&#x3002;<b style="color:red">&#x671F;&#x671B;</b>&#x5927;&#x5E45;&#x51B3;&#x5B9A;&#x4E86;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x80FD;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x5373;&#x5C06;&#x5F62;&#x6210;&#x7684;&#x5EFA;&#x6784;&#x7C7B;&#x578B;&#x3002;&#x4E3E;&#x4F8B;&#x6765;&#x8BF4;&#xFF0C;&#x4F60;&#x670B;&#x53CB;&#x7684;&#x6E83;&#x75A1;&#x5B8C;&#x5168;&#x662F;&#x4ED6;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4ED6;&#x5EFA;&#x6784;&#x51FA;&#x81EA;&#x5DF1;&#x8EAB;&#x4F53;&#x4E0A;&#x7684;&#x5B9E;&#x4F53;&#x7269;&#x8D28;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Our focus of energy is vital, both yours and mine.<b style="color:red">expectation</b> to a large extent determines the manner in which we will use this energy, and the types of constructions that will be formed.Your friend&#x2019;s ulcer for example is his problem in its entirety, constructed into the physical matter of his own organism.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 160.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;160&#x8282; &#x6697;&#x793A;&#x5C31;&#x662F;<b style="color:red">&#x671F;&#x671B;</b> &#x6697;&#x793A;&#x7684;&#x91CD;&#x8981;&#x6027; 12&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 160.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;160&#x8282; &#x6697;&#x793A;&#x5C31;&#x662F;<b style="color:red">&#x671F;&#x671B;</b> &#x6697;&#x793A;&#x7684;&#x91CD;&#x8981;&#x6027; 12&#x6BB5;</a></p>
 <p>&#x73B0;&#x5728;&#xFF0C;&#x56DE;&#x5230;&#x4E4B;&#x524D;&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x4F60;&#x4EEC;&#x6240;&#x8C13;&#x7684;&#x6697;&#x793A;&#x5176;&#x5B9E;&#x5C31;&#x662F;<b style="color:red">&#x671F;&#x671B;</b>&#x3002;&#x4F60;&#x4EEC;&#x73B0;&#x5728;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x8EAB;&#x4F53;&#x5F62;&#x8C61;&#x5982;&#x4F55;&#x5EFA;&#x6784;&#xFF0C;&#x8FD9;&#x4E2A;&#x5EFA;&#x6784;&#x662F;&#x7531;&#x5185;&#x5411;&#x5916;&#xFF0C;&#x5185;&#x6211;&#x8BD5;&#x56FE;&#x5EFA;&#x6784;&#x4E00;&#x4E2A;&#x4E0E;&#x81EA;&#x5DF1;&#x7684;&#x81EA;&#x6211;&#x610F;&#x8C61;&#x4E00;&#x81F4;&#x7684;&#x8EAB;&#x4F53;&#x5F62;&#x8C61;&#x3002;&#x5982;&#x679C;&#x6709;&#x4EC0;&#x4E48;&#x5EFA;&#x6784;&#x4E0A;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5176;&#x6E90;&#x5934;&#x5E76;&#x975E;&#x6765;&#x81EA;&#x5185;&#x6211;&#xFF0C;&#x800C;&#x662F;&#x6765;&#x81EA;&#x4E2A;&#x4EBA;&#x6F5C;&#x610F;&#x8BC6;&#x6216;&#x81EA;&#x6211;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Now, to return to an earlier discussion. What you call suggestion is indeed <b style="color:red">expectation</b>.You should understand by now how the physical image is constructed. This construction is from the inside out. The inner self attempts to construct a physical image in line with its own self-image.Any errors of construction have their origin not in the inner self, but in either the personal subconscious or in the ego.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 163.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;163&#x8282; &#x25B2;&#x75BE;&#x75C5;&#x5C31;&#x662F;&#x963B;&#x788D;&#x6027;&#x884C;&#x52A8;&#x9020;&#x6210;&#x7684;&#x7ED3;&#x679C; &#x6697;&#x793A; 18&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 163.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;163&#x8282; &#x25B2;&#x75BE;&#x75C5;&#x5C31;&#x662F;&#x963B;&#x788D;&#x6027;&#x884C;&#x52A8;&#x9020;&#x6210;&#x7684;&#x7ED3;&#x679C; &#x6697;&#x793A; 18&#x6BB5;</a></p>
 <p>&#x56E0;&#x6B64;&#x6697;&#x793A;&#x662F;&#x884C;&#x52A8;&#x7684;&#x7279;&#x6027;&#x4E4B;&#x4E00;&#xFF0C;&#x6697;&#x793A;&#x8FD9;&#x4E2A;&#x8BCD;&#x7528;&#x5F97;&#x5E76;&#x4E0D;&#x597D;&#x3002;&#x7531;&#x4E8E;&#x5B83;&#x5728;&#x4F60;&#x4EEC;&#x7CFB;&#x7EDF;&#x5185;&#x8FD0;&#x4F5C;&#xFF0C;&#x4E5F;&#x5728;&#x4EBA;&#x7C7B;&#x4EBA;&#x683C;&#x4E4B;&#x5185;&#x8FD0;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x79F0;&#x5B83;&#x4E3A;<b style="color:red">&#x671F;&#x671B;</b>&#x4F1A;&#x597D;&#x5F97;&#x591A;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x800C;&#x5DF2;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x6240;&#x6709;&#x884C;&#x52A8;&#x7684;&#x5F62;&#x6001;&#x4E2D;&#xFF0C;&#x540C;&#x4E00;&#x7C7B;&#x7684;&#x5185;&#x5728;&#x6307;&#x5F15;&#x6D3B;&#x52A8;&#x5176;&#x5B9E;&#x4E92;&#x6709;&#x5173;&#x8054;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Suggestion is therefore one of the characteristics of action. The term suggestion is a poor one.As it operates within your system, and within the human personality, the word <b style="color:red">expectation</b> is a much better term.Nevertheless, <b style="color:red">expectation</b> is only one phase, for the same kind of inner directive activity is pertinent within all forms of action.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes5/SESSION 202.txt">&#x65E9;&#x671F;&#x8BFE;5(2) 1965&#x5E74;10&#x6708;27&#x65E5; &#x661F;&#x671F;&#x4E09; &#x665A;&#x4E0A;9&#x70B9; &#x5B9A;&#x671F;&#x8BFE; 31&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes5/SESSION 202.txt">&#x65E9;&#x671F;&#x8BFE;5(2) 1965&#x5E74;10&#x6708;27&#x65E5; &#x661F;&#x671F;&#x4E09; &#x665A;&#x4E0A;9&#x70B9; &#x5B9A;&#x671F;&#x8BFE; 31&#x6BB5;</a></p>
 <p>&#x6697;&#x793A;&#x53EF;&#x4EE5;&#x5851;&#x9020;&#x672A;&#x6765;&#xFF0C;&#x8FD9;&#x662F;&#x7406;&#x6240;&#x5F53;&#x7136;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;<b style="color:red">&#x671F;&#x671B;</b>&#x52A0;&#x8FDB;&#x6765;&#x4E86;&#x3002;&#x6697;&#x793A;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x68A6;&#xFF0C;&#x800C;&#x68A6;&#x672C;&#x8EAB;&#x5C31;&#x53EF;&#x4EE5;&#x50CF;&#x884C;&#x52A8;&#x822C;&#x7684;&#x8FD0;&#x4F5C;&#x3002;&#x5F3A;&#x70C8;&#x7684;&#x68A6;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6BD4;&#x4EFB;&#x4F55;&#x7269;&#x8D28;&#x7ECF;&#x9A8C;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x5FC3;&#x7075;&#x884C;&#x52A8;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x6539;&#x53D8;&#x4EBA;&#x683C;&#x7684;&#x65B9;&#x5411;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Suggestion then can shape the future. <b style="color:red">expectation</b> enters in here particularly of course. Suggestion can shape dreams, and the dreams themselves then operate as action. A strong dream can be a more significant psychic action than any physical experience, and it can change the course of the personality completely.</details>
@@ -877,13 +633,13 @@ Suggestion then can shape the future. <b style="color:red">expectation</b> enter
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E4%B8%8E%E7%88%B1%E5%92%8C%E6%81%A8%E7%9A%84%E5%85%B3%E7%B3%BBdiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x7231;&#x548C;&#x6068;&#x7684;&#x5173;&#x7CFB;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2021&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2021&#x6BB5;</a></p>
 <p>&#x6068;&#x603B;&#x662F;&#x5305;&#x542B;&#x7740;&#x4E00;&#x79CD;&#x4E0E;&#x7231;&#x5206;&#x79BB;&#x7684;&#x75DB;&#x82E6;&#x611F;&#xFF0C;&#x7136;&#x800C;&#x8FD9;&#x79CD;&#x611F;&#x89C9;&#x53EF;&#x80FD;&#x88AB;&#x4E3B;&#x89C2;&#x5316;&#x4E86;&#x3002;&#x4E00;&#x4E2A;&#x8BA9;&#x4F60;&#x5728;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x90FD;&#x611F;&#x5230;&#x5F3A;&#x70C8;&#x53CD;&#x611F;&#x7684;&#x4EBA;&#x4F1A;&#x8BA9;&#x4F60;&#x70E6;&#x607C;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x6216;&#x5979;&#x6CA1;&#x6709;&#x8FBE;&#x5230;&#x4F60;&#x6240;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x3002;&#x800C;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x503C;&#x8D8A;&#x9AD8;&#xFF0C;&#x4ED6;&#x4EEC;&#x597D;&#x50CF;&#x4E0E;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x5C31;&#x80CC;&#x79BB;&#x5F97;&#x8D8A;&#x8FDC;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6068;&#x4F60;&#x7684;&#x7236;&#x6BCD;&#xFF0C;&#x90A3;&#x4E48;&#x6070;&#x597D;&#x662F;&#x56E0;&#x4E3A;&#x4F60;<b style="color:red">&#x671F;&#x671B;</b>&#x7740;&#x8FD9;&#x6837;&#x7684;&#x7231;&#x3002;&#x4E00;&#x4E2A;&#x4F60;&#x5BF9;&#x4ED6;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x4EBA;&#xFF0C;&#x4ED6;&#x6C38;&#x8FDC;&#x90FD;&#x4E0D;&#x4F1A;&#x7ED9;&#x4F60;&#x5E26;&#x6765;&#x75DB;&#x82E6;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Hatred always involves a painful sense of separation from love, which may be idealized.A person you feel strongly against at any given time upsets you because he or she does not live up to your <b style="color:red">expectations</b>.The higher your <b style="color:red">expectations</b> the greater any divergence from them seems.If you hate a parent it is precisely because you expect such love.A person from whom you expect nothing will never earn your bitterness.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2023&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/NoPR/CHAPTER -1.txt">&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;(44) &#x7B2C;0&#x7AE0;&#x4E2A;&#x4EBA;&#x5B9E;&#x76F8;&#x7684;&#x5236;&#x9020; 2023&#x6BB5;</a></p>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x7231;&#x53EF;&#x4EE5;&#x5F88;&#x6070;&#x5F53;&#x5730;&#x5305;&#x542B;&#x7740;&#x6068;&#xFF1B;&#x800C;&#x6068;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x7740;&#x7231;&#x5E76;&#x4E3A;&#x7231;&#x6240;&#x9A71;&#x4F7F;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x4F1A;&#x88AB;&#x4E00;&#x79CD;&#x7406;&#x60F3;&#x5316;&#x7684;&#x7231;&#x6240;&#x9A71;&#x4F7F;&#x3002;&#x4F60;&#x201C;&#x6028;&#x6068;&#x201D;&#x67D0;&#x4E9B;&#x628A;&#x4F60;&#x548C;&#x4F60;&#x559C;&#x6B22;&#x7684;&#x5BF9;&#x8C61;&#x5206;&#x5F00;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x6B63;&#x662F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x88AB;&#x7231;&#x7740;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;<b style="color:red">&#x671F;&#x671B;</b>&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x6EE1;&#x8DB3;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x8BA9;&#x4F60;&#x5F88;&#x662F;&#x538C;&#x6076;&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x4E3A;&#x7236;&#x6BCD;&#x4ED8;&#x51FA;&#x4E86;&#x7231;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x4F60;&#x7684;&#x7236;&#x6BCD;&#x4F3C;&#x4E4E;&#x6CA1;&#x6709;&#x56DE;&#x9988;&#x4F60;&#x7684;&#x7231;&#xFF0C;&#x5E76;&#x4E14;&#x5426;&#x5B9A;&#x4E86;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x201C;&#x6028;&#x6068;&#x201D;&#x4F60;&#x7684;&#x7236;&#x6BCD;&#xFF0C;&#x56E0;&#x4E3A;&#x7231;&#x4F1A;&#x4FC3;&#x4F7F;&#x4F60;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x66F4;&#x591A;&#x3002;&#x6028;&#x6068;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x4F60;&#x628A;&#x4F60;&#x7684;&#x7231;&#x627E;&#x56DE;&#x6765;&#x3002;&#x5B83;&#x5E94;&#x8BE5;&#x662F;&#x7528;&#x6765;&#x5F15;&#x5BFC;&#x4E00;&#x79CD;&#x6765;&#x81EA;&#x4E8E;&#x4F60;&#x7684;&#x4EA4;&#x6D41;&#xFF0C;&#x5E76;&#x8868;&#x660E;&#x4F60;&#x7684;&#x611F;&#x53D7;&#x2014;&#x2014;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#xFF0C;&#x6D88;&#x9664;&#x9694;&#x9602;&#xFF0C;&#x800C;&#x8BA9;&#x4F60;&#x548C;&#x4F60;&#x6240;&#x7231;&#x7684;&#x5BF9;&#x8C61;&#x66F4;&#x52A0;&#x63A5;&#x8FD1;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6068;&#x5E76;&#x4E0D;&#x662F;&#x5BF9;&#x7231;&#x7684;&#x5426;&#x5B9A;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x79CD;&#x60F3;&#x91CD;&#x65B0;&#x83B7;&#x5F97;&#x7231;&#x7684;&#x4F01;&#x56FE;&#xFF0C;&#x5E76;&#x4E14;&#x5BF9;&#x90A3;&#x79CD;&#x5C06;&#x4F60;&#x4E0E;&#x7231;&#x5206;&#x79BB;&#x7684;&#x5883;&#x9047;&#x6709;&#x4E00;&#x4E2A;&#x75DB;&#x82E6;&#x7684;&#x8BA4;&#x77E5;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Love, therefore, can contain hate very nicely.Hatred can contain love and be driven by it, particularly by an idealized love.You &quot;hate&quot; something that separates you from a loved object.It is precisely because the object is loved that it is so disliked if <b style="color:red">expectations</b> are not met.You may love a parent, and if the parent does not seem to return the love and denies your <b style="color:red">expectations</b>, then you may &quot;hate&quot; the same parent because of the love that leads you to expect more.The hatred is meant to get you your love back.It is supposed to lead to a communication from you, stating your feelings &#x2014; clearing the air, so to speak, and bringing you closer to the love object.Hatred is not the denial of love, then, but an attempt to regain it, and a painful recognition of circumstances that separate you from it.</details>
@@ -891,43 +647,43 @@ Love, therefore, can contain hate very nicely.Hatred can contain love and be dri
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E5%92%8C%E6%A2%A6%E7%9A%84%E5%85%B3%E7%B3%BBdiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x68A6;&#x7684;&#x5173;&#x7CFB;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/xinling/SESSION 795.txt">&#x5FC3;&#x7075;&#x7684;&#x672C;&#x8D28;(1) &#x7B2C;795&#x8282; 1977&#x5E74;02&#x6708;28&#x65E5; &#x661F;&#x671F;&#x4E00; &#x665A;&#x4E0A;9:33&#x5206; 9&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/xinling/SESSION 795.txt">&#x5FC3;&#x7075;&#x7684;&#x672C;&#x8D28;(1) &#x7B2C;795&#x8282; 1977&#x5E74;02&#x6708;28&#x65E5; &#x661F;&#x671F;&#x4E00; &#x665A;&#x4E0A;9:33&#x5206; 9&#x6BB5;</a></p>
 <p>&#x4F60;&#x5BF9;&#x68A6;&#x7684;&#x4FE1;&#x5FF5;&#x4F1A;&#x6E32;&#x67D3;&#x4F60;&#x7684;&#x8BB0;&#x5FC6;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x5BF9;&#x5B83;&#x4EEC;&#x7684;&#x8BE0;&#x91CA;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x9192;&#x8F6C;&#x7684;&#x90A3;&#x4E00;&#x70B9;&#xFF0C;&#x6000;&#x7740;&#x5353;&#x8D8A;&#x7684;&#x5FC3;&#x7406;&#x4E0A;&#x7684;&#x6B3A;&#x9A97;&#xFF0C;&#x4F60;&#x4EEC;&#x5E38;&#x505A;&#x6700;&#x540E;&#x4E00;&#x5206;&#x949F;&#x7684;&#x8C03;&#x6574;&#xFF0C;&#x4EE5;&#x4F7F;&#x4F60;&#x7684;&#x68A6;&#x4E0E;&#x6709;&#x610F;&#x8BC6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x66F4;&#x52A0;&#x4E00;&#x81F4;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5E38;&#x51FA;&#x4E4B;&#x4EE5;&#x68A6;&#x610F;&#x8C61;&#x7684;&#x6027;&#x8C61;&#x5F81;&#x662F;&#x8FC7;&#x5206;&#x7B80;&#x5316;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x4F7F;&#x4F60;&#x4EE5;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x65B9;&#x5F0F;&#x8BE0;&#x91CA;&#x4F60;&#x7684;&#x68A6;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Your beliefs about dreams color your memory and interpretation of them, so that at the point of waking, with magnificent psychological duplicity, you often make last-minute adjustments that bring your dreams more in line with your conscious <b style="color:red">expectations</b>. The sexual symbols usually attached to dream images are highly simplistic, for example. They program you to interpret your dreams in a given manner.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes3/SESSION 115.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;115&#x8282;&#x68A6;&#x4E30;&#x5BCC;&#x4F60;&#x7684;&#x5B58;&#x5728;,&#x52A9;&#x4F60;&#x7406;&#x89E3;&#x503C;&#x7684;&#x5145;&#x76C8;&#x7684;&#x6982;&#x5FF5; 38&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes3/SESSION 115.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;115&#x8282;&#x68A6;&#x4E30;&#x5BCC;&#x4F60;&#x7684;&#x5B58;&#x5728;,&#x52A9;&#x4F60;&#x7406;&#x89E3;&#x503C;&#x7684;&#x5145;&#x76C8;&#x7684;&#x6982;&#x5FF5; 38&#x6BB5;</a></p>
 <p>&#x7136;&#x800C;&#xFF0C;&#x968F;&#x7740;&#x81EA;&#x6211;&#x7684;&#x4F11;&#x606F;&#xFF0C;&#x4E2A;&#x4EBA;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x4EA4;&#x6D41;&#x548C;&#x68A6;&#x7684;&#x5EFA;&#x6784;&#x901A;&#x8FC7;&#xFF0C;&#x8D8A;&#x8FC7;&#x81EA;&#x6211;&#x7684;&#x5C4F;&#x969C;&#xFF0C;&#x4EE5;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4ED6;&#x5728;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#x53D8;&#x5F97;&#x81EA;&#x7531;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4ED6;&#x76EE;&#x524D;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x5F53;&#x81EA;&#x6211;&#x4F11;&#x606F;&#x65F6;&#xFF0C;&#x4ED6;&#x53EF;&#x80FD;&#x4F1A;&#x91CD;&#x65B0;&#x521B;&#x9020;&#x4E00;&#x4E2A;<b style="color:red">&#x671F;&#x671B;</b>&#x5F88;&#x9AD8;&#x7684;&#x65F6;&#x5149;&#x3002;&#x7531;&#x6B64;&#x4EA7;&#x751F;&#x7684;&#x68A6;&#x5C06;&#x90E8;&#x5206;&#x5730;&#x6253;&#x7834;&#x4E0D;&#x826F;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5FAA;&#x73AF;&#xFF0C;&#x4E0E;&#x4ED6;&#x4EEC;&#x7C97;&#x52A3;&#x7684;&#x7269;&#x8D28;&#x5EFA;&#x6784;&#xFF0C;&#x8BA9;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x4EBA;&#x5F00;&#x59CB;&#x6CBF;&#x7740;&#x66F4;&#x6709;&#x76CA;&#x7684;&#x9053;&#x8DEF;&#x524D;&#x8FDB;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x68A6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D0;&#x5347;&#x5185;&#x5728;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x6765;&#x8F6C;&#x6362;&#x7269;&#x8D28;&#x73AF;&#x5883;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 However, with the ego at rest the individual may allow communications and dream constructions through, past the ego barrier, in such a manner that he becomes in some ways free. If for example his present <b style="color:red">expectations</b> are faulty, when the ego rests he may recreate a time when <b style="color:red">expectations</b> were high. The resulting dream will then partially break the circle of poor <b style="color:red">expectations</b>, with their shoddy physical constructions, and start such an individual along a more beneficial path. In other words, such a dream may begin to transform the physical environment through lifting inner <b style="color:red">expectation</b>.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes3/SESSION 144.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;144&#x8282;&#x8BBF;&#x5BA2;&#x6D1B;&#x7433;&#x7684;&#x4E2A;&#x4EBA;&#x8D44;&#x6599;,&#x80FD;&#x91CF;&#x7ED3; 50&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes3/SESSION 144.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;144&#x8282;&#x8BBF;&#x5BA2;&#x6D1B;&#x7433;&#x7684;&#x4E2A;&#x4EBA;&#x8D44;&#x6599;,&#x80FD;&#x91CF;&#x7ED3; 50&#x6BB5;</a></p>
 <p>&#x8BDD;&#x8BF4;&#xFF0C;&#x5982;&#x4F60;&#x6240;&#x77E5;&#xFF0C;&#x9664;&#x5176;&#x4ED6;&#x4E4B;&#x5916;&#xFF0C;&#x68A6;&#x53CD;&#x6620;&#x4E86;&#x5185;&#x5FC3;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x3002;&#x4E3A;&#x4E86;&#x6211;&#x4EEC;&#x8BBF;&#x5BA2;&#x7684;&#x542F;&#x8499;&#xFF0C;&#x68A6;&#x662F;&#x7531;&#x6BCF;&#x4E2A;&#x4E2A;&#x4F53;&#x521B;&#x9020;&#x7684;&#xFF0C;&#x5E76;&#x88AB;&#x8D4B;&#x4E88;&#x4E86;&#x5B9E;&#x9645;&#x7684;&#x5206;&#x5B50;&#x7ED3;&#x6784;&#x548C;&#x5B9E;&#x76F8;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Now. As you know, among other things dreams reflect inner <b style="color:red">expectation</b>. For our visitors edification, dreams are created by each individual, and given actual molecular structure and reality, within a different field than the one with which you are usually familiar.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes3/SESSION 144.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;144&#x8282;&#x8BBF;&#x5BA2;&#x6D1B;&#x7433;&#x7684;&#x4E2A;&#x4EBA;&#x8D44;&#x6599;,&#x80FD;&#x91CF;&#x7ED3; 51&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes3/SESSION 144.txt">&#x65E9;&#x671F;&#x8BFE;3(17) &#x7B2C;144&#x8282;&#x8BBF;&#x5BA2;&#x6D1B;&#x7433;&#x7684;&#x4E2A;&#x4EBA;&#x8D44;&#x6599;,&#x80FD;&#x91CF;&#x7ED3; 51&#x6BB5;</a></p>
 <p>&#x4F46;&#x662F;&#xFF0C;&#x4E0D;&#x80FD;&#x628A;&#x68A6;&#x5F53;&#x4F5C;&#x662F;&#x5BF9;&#x5185;&#x5728;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x51C6;&#x786E;&#x63CF;&#x8FF0;&#xFF0C;&#x56E0;&#x4E3A;&#x5176;&#x4E2D;&#x6D89;&#x53CA;&#x5230;&#x592A;&#x591A;&#x7684;&#x5176;&#x4ED6;&#x56E0;&#x7D20;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Dreams cannot be taken, however, as accurate descriptions of inner <b style="color:red">expectation</b>, since too many other elements are involved.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 173.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;173&#x8282; &#x68A6;&#x4E16;&#x754C;&#x4E0E;&#x4EBA;&#x683C;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB; 48&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 173.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;173&#x8282; &#x68A6;&#x4E16;&#x754C;&#x4E0E;&#x4EBA;&#x683C;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB; 48&#x6BB5;</a></p>
 <p>&#x68A6;&#x786E;&#x5B9E;&#x8868;&#x8FBE;&#x4EBA;&#x683C;&#x7684;&#x57FA;&#x672C;&#x5B9E;&#x76F8;&#x3002;&#x8D1F;&#x9762;&#x7684;&#x68A6;&#x5BB9;&#x6613;&#x5F3A;&#x5316;&#x4EBA;&#x683C;&#x7684;&#x8D1F;&#x9762;&#x9762;&#x5411;&#xFF0C;&#x800C;&#x5F62;&#x6210;&#x4E0D;&#x5E78;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4E8E;&#x662F;&#x6076;&#x6027;&#x5FAA;&#x73AF;&#x3002;&#x5728;&#x6697;&#x793A;&#x4E0B;&#xFF0C;&#x68A6;&#x7684;&#x884C;&#x52A8;&#x53EF;&#x4EE5;&#x7ECF;&#x7531;&#x5BFC;&#x5F15;&#x6765;&#x5B9E;&#x73B0;&#x5EFA;&#x8BBE;&#x6027;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x5B83;&#x4EEC;&#x672C;&#x8EAB;&#x786E;&#x5B9E;&#x53EF;&#x4EE5;&#x4E3A;&#x8BE5;&#x4EBA;&#x683C;&#x5E26;&#x6765;&#x66F4;&#x597D;&#x7684;&#x6539;&#x53D8;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Dreams do express a personality&#x2019;s basic reality.Negative dreams tend to reinforce the negative aspects of the personality, helping to form vicious circles of unfortunate complications.Upon suggestion dream actions can be turned toward fulfilling constructive <b style="color:red">expectations</b>, which can themselves effect a definite change for the better in the personality involved.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 174.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;174&#x8282; &#x68A6;&#x7684;&#x7597;&#x6CD5; 41&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 174.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;174&#x8282; &#x68A6;&#x7684;&#x7597;&#x6CD5; 41&#x6BB5;</a></p>
 <p>&#x53E6;&#x5916;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x6211;&#x4EEC;&#x4E0D;&#x6253;&#x7B97;&#x4EE5;&#x68A6;&#x884C;&#x52A8;&#x53D6;&#x4EE3;&#x5B9E;&#x8D28;&#x884C;&#x52A8;&#xFF0C;&#x6211;&#x4EEC;&#x8BF4;&#x7684;&#x662F;&#x4E00;&#x4E9B;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x4E5F;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x5177;&#x4F53;&#x95EE;&#x9898;&#x3002;&#x5C31;&#x4E00;&#x822C;&#x7684;&#x505A;&#x6CD5;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x6000;&#x62B1;&#x7740;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x4EE5;&#x66F4;&#x6B63;&#x9762;&#x3001;&#x66F4;&#x6709;&#x5EFA;&#x8BBE;&#x6027;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x6211;&#x4EEC;&#x7684;&#x68A6;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Again, we are not attempting to substitute dream action for physical action, generally speaking. We are talking about specific problems that may arise that need treatment.As far as general practice is concerned, we will deal with our dreams in a much more positive and constructive manner, along the lines of <b style="color:red">expectation</b>.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes4/SESSION 178.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;178&#x8282; &#x7761;&#x524D;&#x6697;&#x793A; 53&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes4/SESSION 178.txt">&#x65E9;&#x671F;&#x8BFE;4(12) &#x7B2C;178&#x8282; &#x7761;&#x524D;&#x6697;&#x793A; 53&#x6BB5;</a></p>
 <p>&#x8FD9;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x4E34;&#x7761;&#x524D;&#x7684;&#x5065;&#x5EB7;&#x6697;&#x793A;&#x4F1A;&#x5F88;&#x6709;&#x6548;&#xFF0C;&#x987A;&#x5E26;&#x4E00;&#x63D0;&#xFF0C;&#x7761;&#x524D;&#x6697;&#x793A;&#x662F;&#x76F8;&#x5F53;&#x68D2;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x5FC3;&#x4E2D;&#x6000;&#x62B1;&#x7740;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x5BF9;&#x4F60;&#x4E5F;&#x6709;&#x5E2E;&#x52A9;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x7ED9;&#x81EA;&#x5DF1;&#x4E00;&#x4E9B;&#x6697;&#x793A;&#xFF0C;&#x544A;&#x8BC9;&#x81EA;&#x5DF1;&#x4F1A;&#x5728;&#x68A6;&#x91CC;&#x5B9E;&#x73B0;&#x60F3;&#x8981;&#x7684;&#x60C5;&#x5883;&#x3002;&#x63A5;&#x7740;&#x68A6;&#x5C31;&#x4F1A;&#x52A0;&#x5F3A;&#x548C;&#x6D3B;&#x5316;&#x4F60;&#x81EA;&#x5DF1;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x3002;&#x5982;&#x4F60;&#x4EEC;&#x6240;&#x77E5;&#xFF0C;<b style="color:red">&#x671F;&#x671B;</b>&#x672C;&#x8EAB;&#x5C31;&#x4E0E;&#x4EFB;&#x4F55;&#x7279;&#x5B9A;&#x60C5;&#x5883;&#x662F;&#x5426;&#x771F;&#x7684;&#x4F1A;&#x53D1;&#x751F;&#x5BC6;&#x5207;&#x76F8;&#x5173;&#x3002;&#x5728;&#x6D89;&#x53CA;&#x8FD9;&#x4E9B;&#x4E3B;&#x9898;&#x524D;&#xFF0C;&#x4F1A;&#x8FDB;&#x4E00;&#x6B65;&#x8BE6;&#x7EC6;&#x8BA8;&#x8BBA;&#x6240;&#x6709;&#x7684;&#x89C2;&#x70B9;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 This is one of the reasons why health suggestions given immediately before sleep are so effective. Incidentally, they are excellent practice. <b style="color:red">expectation</b> can also aid you.In this case suggestions should be given leading to dreams in which a desired situation is accomplished. The dream will then increase and activate your own <b style="color:red">expectations</b>.And as you know, the <b style="color:red">expectations</b> themselves have much to do with whether or not any given situation will occur.Further detailed discussions will be held on all of these points, before these matters are covered.</details>
@@ -935,7 +691,7 @@ This is one of the reasons why health suggestions given immediately before sleep
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E5%92%8C%E8%BA%AB%E4%BD%93body%E7%9A%84%E5%85%B3%E7%B3%BBdiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x8EAB;&#x4F53;&#xFF08;body&#xFF09;&#x7684;&#x5173;&#x7CFB;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/jiankang/CHAPTER -1.txt">&#x5065;&#x5EB7;&#x4E4B;&#x9053;(8) &#x524D;&#x8A00; 2427&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/jiankang/CHAPTER -1.txt">&#x5065;&#x5EB7;&#x4E4B;&#x9053;(8) &#x524D;&#x8A00; 2427&#x6BB5;</a></p>
 <p>&#x4F60;&#x7684;&#x8EAB;&#x4F53;&#x5B9E;&#x9645;&#x4E0A;&#x9760;&#x5927;&#x91CF;&#x559C;&#x60A6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x800C;&#x6D3B;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Your body actually lives on large quantities of joyful <b style="color:red">expectation</b>.</details>
@@ -943,7 +699,7 @@ Your body actually lives on large quantities of joyful <b style="color:red">expe
 <h2 class="mume-header" id="div-align--leftb-stylecolorred%E6%9C%9F%E6%9C%9Bb%E5%BD%B1%E5%93%8D%E7%94%B2%E7%8A%B6%E8%85%BAdiv"><div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x5F71;&#x54CD;&#x7532;&#x72B6;&#x817A;</div></h2>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 71&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 73.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;73&#x8282;&#x7269;&#x8D28;&#x672C;&#x8D28;,&#x6D3E;&#x73C0;&#x592B;&#x5987;,&#x5B9E;&#x76F8;&#x7684;&#x6DF1;&#x5EA6;(&#x7528;&#x753B;&#x4F5C;&#x6BD4;&#x55BB;) 71&#x6BB5;</a></p>
 <p>&#x7532;&#x72B6;&#x817A;&#x5728;<b style="color:red">&#x671F;&#x671B;</b>&#x65B9;&#x9762;&#x7684;&#x8FD0;&#x4F5C;&#x5F88;&#x5F3A;&#xFF0C;&#x8377;&#x5C14;&#x8499;&#x7684;&#x5E73;&#x8861;&#x901A;&#x5E38;&#x7EF4;&#x6301;&#x5728;&#x76F8;&#x5F53;&#x6B63;&#x5E38;&#x7684;&#x6C34;&#x5E73;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5B83;&#x5BF9;&#x6050;&#x614C;&#x548C;&#x6050;&#x60E7;&#x5F88;&#x654F;&#x611F;&#xFF0C;&#x5E76;&#x4E14;&#x5F71;&#x54CD;&#x5230;&#x4E0E;&#x5185;&#x5728;&#x6F5C;&#x610F;&#x8BC6;&#x673A;&#x5236;&#x5408;&#x4F5C;&#x7684;&#x5176;&#x4ED6;&#x817A;&#x4F53;&#xFF0C;&#x5B83;&#x53D8;&#x5F97;&#x8FC7;&#x5EA6;&#x523A;&#x6FC0;&#xFF0C;&#x5BFC;&#x81F4;&#x6F5C;&#x610F;&#x8BC6;&#x673A;&#x5236;&#x771F;&#x7684;&#x5728;&#x5B9E;&#x8D28;&#x4E0A;&#x521B;&#x9020;&#x4E86;&#x6050;&#x60E7;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x800C;&#x8FD9;&#x4E9B;&#x6050;&#x60E7;&#x672C;&#x8EAB;&#x5F15;&#x8D77;&#x4E86;&#x6700;&#x521D;&#x7684;&#x8FC7;&#x5EA6;&#x884C;&#x52A8;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 The thyroid gland operates strongly in regard to <b style="color:red">expectations</b>, hormonal balances being maintained at rather normal levels normally.It is sensitive however to panic and fear, and, affecting other glands working with inner subconscious mechanisms, it becomes overly stimulated and causes subconscious mechanisms to actually create, in matter, the object of the fears which have themselves caused the initial over action.</details>
@@ -953,7 +709,7 @@ The thyroid gland operates strongly in regard to <b style="color:red">expectatio
 <h3 class="mume-header" id="%E6%9D%B0%E5%87%BA%E7%9A%84%E8%89%BA%E6%9C%AF%E5%AE%B6%E5%BF%85%E5%AE%9A%E6%98%AF%E8%B4%AB%E5%9B%B0%E7%9A%84">&#x6770;&#x51FA;&#x7684;&#x827A;&#x672F;&#x5BB6;&#x5FC5;&#x5B9A;&#x662F;&#x8D2B;&#x56F0;&#x7684;</h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red"></b>&#x7684;&#x529B;&#x91CF;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red"></b>&#x7684;&#x529B;&#x91CF;</a></p>
 <span>
 &#x5728;&#x4F60;&#x4EEC;&#x7684;&#x7269;&#x8D28;&#x573A;&#x57DF;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x9650;&#x5236;&#x662F;&#x91CD;&#x8981;&#x7684;&#xFF0C;&#x5728;&#x4F60;&#x4EEC;&#x7684;&#x7269;&#x8D28;&#x573A;&#x57DF;&#x4E2D;&#xFF0C;&#x4E8B;&#x5B9E;&#x5F80;&#x5F80;&#x662F;<b style="color:red">&#x671F;&#x5F85;</b>&#x9020;&#x6210;&#x7684;&#xFF0C;&#x6216;&#x8005;&#x662F;<b style="color:red">&#x671F;&#x5F85;</b>&#x6210;&#x771F;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4EEC;&#x76F8;&#x4FE1;&#xFF0C;&#x6BD4;&#x65B9;&#x8BF4;&#xFF0C;&#x6770;&#x51FA;&#x7684;&#x827A;&#x672F;&#x5BB6;&#x5FC5;&#x5B9A;&#x662F;&#x7A77;&#x56F0;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x8FD9;&#x5C31;&#x4F1A;&#x662F;&#x4F60;&#x6574;&#x4F53;<b style="color:red">&#x671F;&#x5F85;</b>&#x67B6;&#x6784;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1B;&#x5BF9;&#x4F60;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x5C06;&#x771F;&#x7684;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x4E8B;&#x5B9E;&#xFF0C;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x7684;&#x4E8B;&#x5B9E;&#x3002;
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
@@ -989,7 +745,7 @@ I do not believe it possible myself, because of your makeup, that you will ever 
 <h3 class="mume-header" id="%E4%B9%B0%E6%88%BF%E7%9A%84b-stylecolorred%E6%9C%9F%E5%BE%85b">&#x4E70;&#x623F;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b></h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 76.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;76&#x8282;<b style="color:red">&#x671F;&#x5F85;</b>&#x7684;&#x529B;&#x91CF;</a></p>
 <span>
 &#x5728;&#x4F60;&#x4EEC;&#x7B2C;&#x4E09;&#x6B21;&#x53BB;&#x770B;&#x90A3;&#x680B;&#x623F;&#x5B50;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9C81;&#x67CF;&#x611F;&#x89C9;&#x5230;&#x4E86;&#x5468;&#x56F4;&#x4EBA;&#x7684;&#x5FC3;&#x60C5;&#x3002;&#x4F60;&#x4E5F;&#x662F;&#x5982;&#x6B64;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4EEC;&#x4E70;&#x4E0B;&#x90A3;&#x680B;&#x623F;&#x5B50;&#xFF0C;&#x4F60;&#x4EEC;&#x4F1A;&#x5728;13&#x53F7;&#x642C;&#x8FDB;&#x53BB;&#xFF0C;&#x7ED3;&#x679C;&#x4F1A;&#x5F88;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x4EEC;&#x7684;&#x671F;)&#x5F85;&#x4F1A;&#x5EFA;&#x7ACB;&#x5B83;&#x3002;
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
@@ -1005,7 +761,7 @@ As for children, I do not consider 15 years old children.Nevertheless, beyond th
 The energy released in the expansion of <b style="color:red">expectation</b> can be used to advantage in your work, as well as in the natural construction of the <b style="color:red">expectations</b> that always follow.</details>
 </span></div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 51&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 51&#x6BB5;</a></p>
 <span>
 &#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4E5F;&#x8BB8;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x8BF4;&#xFF0C;&#x6211;&#x8BD5;&#x7740;&#x5728;&#x51E0;&#x8282;&#x8BFE;&#x91CC;&#xFF0C;&#x63D0;&#x9AD8;&#x4F60;&#x4EEC;&#x5BF9;&#x76F8;&#x540C;&#x4EF7;&#x4F4D;&#x7684;&#x623F;&#x4EA7;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x6211;&#x7528;&#x6211;&#x8BA4;&#x4E3A;&#x5F88;&#x5408;&#x7406;&#x5730;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5411;&#x4F60;&#x4EEC;&#x5C55;&#x793A;&#xFF0C;&#x7075;&#x6027;&#x4E0A;&#x7684;&#x503C;&#x7684;&#x5145;&#x76C8;(valuefulfillment)&#x53EF;&#x4EE5;&#x5982;&#x4F55;&#x786E;&#x5207;&#x5730;&#x589E;&#x76CA;&#x5EFA;&#x6784;&#xFF0C;&#x4F46;&#x5F92;&#x52B3;&#x65E0;&#x529F;&#x3002;
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
@@ -1029,7 +785,7 @@ With the present heating system, high <b style="color:red">expectations</b> woul
 <h3 class="mume-header" id="%E7%8F%8D%E7%9A%84%E6%96%B0%E4%B8%BB%E7%AE%A1">&#x73CD;&#x7684;&#x65B0;&#x4E3B;&#x7BA1;</h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 42&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 42&#x6BB5;</a></p>
 <p>&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x7684;&#x8BDD;&#xFF0C;&#x9C81;&#x67CF;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x8C08;&#x8C08;&#x4F60;&#x65B0;&#x4E3B;&#x7BA1;&#x7684;&#x4EBA;&#x683C;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x4E0D;&#x4EC5;&#x662F;&#x6E34;&#x671B;&#xFF0C;&#x800C;&#x4E14;&#x662F;<b style="color:red">&#x671F;&#x671B;</b>&#xFF0C;&#x5E26;&#x6765;&#x4E86;&#x4ED6;&#x7684;&#x4E3B;&#x7BA1;&#x804C;&#x4F4D;&#xFF0C;&#x4ED6;&#x60F3;&#x8981;&#xFF0C;&#x5E76;&#x6700;&#x7EC8;<b style="color:red">&#x671F;&#x671B;</b>&#x6709;&#x67D0;&#x79CD;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x9886;&#x5730;&#x3002;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5E74;&#x8F7B;&#x4EBA;&#xFF0C;&#x4ED6;&#x6CA1;&#x6709;&#x52A0;&#x5165;&#x8FC7;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x793E;&#x7FA4;&#xFF0C;&#x751A;&#x81F3;&#x5BF9;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x5BB6;&#x5EAD;&#x6210;&#x5458;&#x90FD;&#x4E0D;&#x786E;&#x5B9A;&#xFF0C;&#x4ED6;&#x5148;&#x662F;&#x5BFB;&#x6C42;&#x5404;&#x79CD;&#x673A;&#x6784;&#x548C;&#x653F;&#x5E9C;&#x5355;&#x4F4D;&#x7684;&#x804C;&#x4F4D;&#xFF0C;&#x5C31;&#x50CF;&#x4E00;&#x4E2A;&#x4EBA;&#x53EF;&#x80FD;&#x7528;&#x6597;&#x7BF7;&#x88F9;&#x4F4F;&#x81EA;&#x5DF1;&#xFF0C;&#x4EE5;&#x4FDD;&#x62A4;&#x81EA;&#x5DF1;&#x514D;&#x53D7;&#x98CE;&#x5439;&#x96E8;&#x6253;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 We will take the personality of your director, Ruburt, if we may.Here not only desire but <b style="color:red">expectation</b> brought about his directorship. He wanted, and finally expected, some kind of domain of his own.Being a part of no real community as a youngster, being unsure even of family unit, he first sought out various organizational positions, and governmental environments, as a man might wrap a cloak about him to protect himself from the elements.</details>
@@ -1038,7 +794,7 @@ We will take the personality of your director, Ruburt, if we may.Here not only d
 So he attempted to wrap himself in the cloak of organization.He remained however basically anonymous.His desire to belong and his <b style="color:red">expectation</b> also became stronger.The gallery represents a unit of community affiliation in which he can exert some power, and yet be within a community unit.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 43&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes2/SESSION 79.txt">&#x65E9;&#x671F;&#x8BFE;2(119) &#x7B2C;79&#x8282;&#x5FC3;&#x7406;&#x5355;&#x5143;,&#x71B5;,&#x5761;&#x5C4B;&#x7684;<b style="color:red">&#x671F;&#x671B;</b> 43&#x6BB5;</a></p>
 <p>&#x6240;&#x4EE5;&#xFF0C;&#x4ED6;&#x8BD5;&#x56FE;&#x7528;&#x673A;&#x6784;&#x56E2;&#x4F53;&#x7684;&#x5916;&#x8863;&#x6765;&#x5305;&#x88F9;&#x81EA;&#x5DF1;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x4ED6;&#x57FA;&#x672C;&#x4E0A;&#x4ECD;&#x7136;&#x662F;&#x65E0;&#x540D;&#x7684;&#x3002;&#x4ED6;&#x5BF9;&#x5F52;&#x5C5E;&#x611F;&#x7684;&#x6E34;&#x671B;&#x548C;<b style="color:red">&#x671F;&#x671B;</b>&#x4E5F;&#x53D8;&#x5F97;&#x66F4;&#x52A0;&#x5F3A;&#x70C8;&#x3002;&#x753B;&#x5ECA;&#x4EE3;&#x8868;&#x4E86;&#x4E00;&#x4E2A;&#x96B6;&#x5C5E;&#x4E8E;&#x793E;&#x7FA4;&#x7684;&#x5355;&#x4F4D;&#xFF0C;&#x5728;&#x5176;&#x4E2D;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x884C;&#x4F7F;&#x4E00;&#x4E9B;&#x6743;&#x529B;&#xFF0C;&#x4F46;&#x53C8;&#x5728;&#x4E00;&#x4E2A;&#x793E;&#x7FA4;&#x5355;&#x4F4D;&#x5185;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 So he attempted to wrap himself in the cloak of organization.He remained however basically anonymous.His desire to belong and his <b style="color:red">expectation</b> also became stronger.The gallery represents a unit of community affiliation in which he can exert some power, and yet be within a community unit.</details>
@@ -1046,145 +802,42 @@ So he attempted to wrap himself in the cloak of organization.He remained however
 <h3 class="mume-header" id="%E4%B9%B0%E8%BD%A6%E7%9A%84b-stylecolorred%E6%9C%9F%E6%9C%9Bb">&#x4E70;&#x8F66;&#x7684;<b style="color:red">&#x671F;&#x671B;</b></h3>
 
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 7&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 7&#x6BB5;</a></p>
 <p>&#x597D;&#xFF0C;&#x7EA6;&#x745F;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x68C0;&#x89C6;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Now. You must watch your <b style="color:red">expectations</b>, Joseph.</details>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 8&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 8&#x6BB5;</a></p>
 <p>&#x6211;&#x8BF4;&#x5F97;&#x975E;&#x5E38;&#x5B9E;&#x9645;&#xFF0C;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x5982;&#x5B9E;&#x521B;&#x9020;&#x4E86;&#x4F60;&#x6240;&#x77E5;&#x7684;&#x751F;&#x6D3B;&#xFF0C;&#x4F60;&#x5BF9;&#x8F66;&#x5B50;&#x7684;&#x6001;&#x5EA6;&#x9700;&#x8981;&#x8C03;&#x6574;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x575A;&#x4FE1;&#x4E70;&#x4E0D;&#x8D77;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x90A3;&#x79CD;&#x8F66;&#xFF0C;&#x5C31;&#x4F1A;&#x5982;&#x5B9E;&#x6210;&#x771F;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 I am speaking in highly practical terms. Your <b style="color:red">expectations</b> literally create your life as you know it. Your attitude toward transportation needs adjustment. As long as you believe firmly that you cannot afford the kind of automobile that you want, this will be literally true.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 8&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 8&#x6BB5;</a></p>
 <p>&#x6211;&#x8BF4;&#x5F97;&#x975E;&#x5E38;&#x5B9E;&#x9645;&#xFF0C;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x5982;&#x5B9E;&#x521B;&#x9020;&#x4E86;&#x4F60;&#x6240;&#x77E5;&#x7684;&#x751F;&#x6D3B;&#xFF0C;&#x4F60;&#x5BF9;&#x8F66;&#x5B50;&#x7684;&#x6001;&#x5EA6;&#x9700;&#x8981;&#x8C03;&#x6574;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x575A;&#x4FE1;&#x4E70;&#x4E0D;&#x8D77;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#x90A3;&#x79CD;&#x8F66;&#xFF0C;&#x5C31;&#x4F1A;&#x5982;&#x5B9E;&#x6210;&#x771F;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 I am speaking in highly practical terms. Your <b style="color:red">expectations</b> literally create your life as you know it. Your attitude toward transportation needs adjustment. As long as you believe firmly that you cannot afford the kind of automobile that you want, this will be literally true.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 9&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 9&#x6BB5;</a></p>
 <p>&#x5149;&#x662F;&#x4F60;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4F1A;&#x6539;&#x53D8;&#x4F60;&#x7684;&#x7269;&#x8D28;&#x73AF;&#x5883;&#x3002;&#x76F8;&#x4FE1;&#x4F60;&#x4E70;&#x5F97;&#x8D77;&#x81EA;&#x5DF1;&#x9700;&#x8981;&#x7684;&#x90A3;&#x79CD;&#x8F66;&#x5B50;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x4FE1;&#x5FF5;&#x672C;&#x8EAB;&#x5C31;&#x4F1A;&#x5F62;&#x5851;&#x51FA;&#x4E00;&#x79CD;&#x73AF;&#x5883;&#xFF0C;&#x8BA9;&#x90A3;&#x79CD;&#x8F66;&#x5B50;&#x771F;&#x7684;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 Your <b style="color:red">expectations</b> alone will change your material circumstances. The belief that you can afford the kind of car you require will in itself form the circumstances that will make such an automobile literally possible.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 13&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 13&#x6BB5;</a></p>
 <p>&#x76F8;&#x53CD;&#x5730;&#xFF0C;&#x65E0;&#x8BBA;&#x4F55;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x7269;&#x8D28;&#x73AF;&#x5883;&#x4E0A;&#x505A;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x53EF;&#x4EE5;&#x91C7;&#x884C;&#x7684;&#x5B9E;&#x7528;&#x6B65;&#x9AA4;&#x5C31;&#x662F;&#x4E86;&#x89E3;<b style="color:red">&#x671F;&#x671B;</b>&#x6CD5;&#x5219;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x4EE5;&#x79EF;&#x6781;&#x6B63;&#x9762;&#x7684;&#x60F3;&#x8C61;&#xFF0C;&#x66FF;&#x6362;&#x6389;&#x6D88;&#x6781;&#x8D1F;&#x9762;&#x7684;&#x60F3;&#x8C61;&#xFF0C;&#x90A3;&#x4E9B;&#x8D1F;&#x9762;&#x7684;&#x60F3;&#x8C61;&#x4F1A;&#x5728;&#x7269;&#x8D28;&#x9762;&#x5FE0;&#x5B9E;&#x5730;&#x590D;&#x5236;&#x51FA;&#x6765;&#x3002;&#x8FD9;&#x5BF9;&#x4F60;&#x6765;&#x8BF4;&#x51E0;&#x4E4E;&#x6BEB;&#x65E0;&#x76CA;&#x5904;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 On the contrary, an understanding of the rule of <b style="color:red">expectation</b> is the one truly practical step you can take whenever any change in physical circumstances is desired. You must replace the negative images you have with positive ones. The negative ones are being faithfully reproduced in physical terms, and this is hardly to your advantage.</details>
 </div>
 <div class="admonition note">
-<p class="admonition-title"><a href=":/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 15&#x6BB5;</a></p>
+<p class="admonition-title"><a href="file:///Users/yiwu/Qtproject/SethSearch/MarkDown/indexback/index/:/tes8/SESSION 335.txt">&#x65E9;&#x671F;&#x8BFE;8(16) &#x7B2C;335&#x8282; <b style="color:red">&#x671F;&#x671B;</b>&#x521B;&#x9020;&#x751F;&#x6D3B; 15&#x6BB5;</a></p>
 <p>&#x4E0D;&#x7528;&#x8BF4;&#x4E5F;&#x77E5;&#x9053;&#xFF0C;&#x5168;&#x804C;&#x5DE5;&#x4F5C;&#x4F1A;&#x6539;&#x5584;&#x8D22;&#x52A1;&#x72B6;&#x51B5;&#xFF0C;&#x4F46;&#x6211;&#x6307;&#x7684;&#x4E0D;&#x662F;&#x8FD9;&#x79CD;&#x4E8B;&#x60C5;&#x3002;&#x5982;&#x679C;&#x2014;&#x2014;&#x975E;&#x5E38;&#x5927;&#x7684;&#x5982;&#x679C;&#x2014;&#x2014;&#x5982;&#x679C;&#x4F60;&#x6539;&#x53D8;&#x4E86;&#x9884;&#x671F;&#xFF0C;&#x800C;&#x521B;&#x9020;&#x51FA;&#x4E00;&#x79CD;&#x6E90;&#x6E90;&#x4E0D;&#x7EDD;&#x7684;&#x5FC3;&#x7075;&#x6C14;&#x5019;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6539;&#x5584;&#x7ECF;&#x6D4E;&#x72B6;&#x51B5;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x4E5F;&#x53EF;&#x4EE5;&#x4FDD;&#x7559;&#x8DDF;&#x76EE;&#x524D;&#x4E00;&#x6837;&#x8BA9;&#x4F60;&#x4E50;&#x5728;&#x5176;&#x4E2D;&#x7684;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;&#x8868;&#x3002;&#x90A3;&#x4E9B;&#x4F60;&#x60F3;&#x90FD;&#x6CA1;&#x60F3;&#x8FC7;&#x7684;&#x95E8;&#x5C31;&#x4F1A;&#x6253;&#x5F00;&#x3002;</p>
 <details> <summary><span style="color:orange">&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x82F1;&#x6587;</span></summary>
 In other respects of course there have been profound changes. By your attitude you are effectively forming a barrier against any financial betterment of any significant kind. You repulse the circumstances in which such betterment could take place automatically, because of the effect of your <b style="color:red">expectations</b>. It goes without saying that a fulltime job would better the financial situation, but this is not the sort of thing to which I am referring. Your situation could be bettered financially while you retain basically the same schedule you now enjoy, if&#x2014;and a very large if&#x2014;if changed <b style="color:red">expectations</b> were creating the psychic climate in which supply would flow. Doors would open that you do not know existed.</details>
 </div>
 </div>
-
-      </div>
-      <div class="md-sidebar-toc">
-<div class="md-toc">
-<details style="padding:0;;padding-left:0px;" open>
-        <summary class="md-toc-link-wrapper">
-          <a href="#&#x8D5B;&#x65AF;&#x8D44;&#x6599;&#x4E2D;&#x5173;&#x4E8E;b-stylecolorred&#x671F;&#x671B;bb-stylecolorredexpectationb&#x7684;&#x6A2A;&#x5411;&#x6458;&#x5F55;" class="md-toc-link"><p>&#x8D5B;&#x65AF;&#x8D44;&#x6599;&#x4E2D;&#x5173;&#x4E8E;<b style="color:red">&#x671F;&#x671B;</b>(<b style="color:red">expectation</b>)&#x7684;&#x6A2A;&#x5411;&#x6458;&#x5F55;</p>
-</a>
-          </summary>
-        <div>
-          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x7684;&#x5B9A;&#x4E49;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5B9A;&#x4E49;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x7684;&#x5F62;&#x6210;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5F62;&#x6210;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x7684;&#x65E9;&#x671F;&#x6765;&#x6E90;&#x662F;&#x7236;&#x6BCD;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x65E9;&#x671F;&#x6765;&#x6E90;&#x662F;&#x7236;&#x6BCD;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x7684;&#x4F5C;&#x7528;&#x548C;&#x91CD;&#x8981;&#x6027;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x4F5C;&#x7528;&#x548C;&#x91CD;&#x8981;&#x6027;</div>
-          </a></div><details style="padding:0;;padding-left:24px;" open>
-        <summary class="md-toc-link-wrapper">
-          <a href="#div-align--left&#x5982;&#x4F55;&#x6539;&#x53D8;b-stylecolorred&#x671F;&#x671B;bdiv" class="md-toc-link"> <div align="left">&#x5982;&#x4F55;&#x6539;&#x53D8;<b style="color:red">&#x671F;&#x671B;</b></div></a>
-          </summary>
-        <div>
-          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x6539;&#x53D8;b-stylecolorred&#x671F;&#x671B;b&#x7684;&#x8D77;&#x70B9;&#x662F;&#x6539;&#x53D8;&#x57FA;&#x672C;&#x60C5;&#x7EEA;" class="md-toc-link">
-            <p>&#x6539;&#x53D8;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x8D77;&#x70B9;&#x662F;&#x6539;&#x53D8;&#x57FA;&#x672C;&#x60C5;&#x7EEA;</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x6709;&#x610F;&#x8BC6;&#x7684;&#x6B32;&#x671B;&#x5FC5;&#x987B;&#x4E0E;&#x6F5C;&#x610F;&#x8BC6;&#x7684;b-stylecolorred&#x671F;&#x671B;b&#x4E00;&#x81F4;" class="md-toc-link">
-            <p>&#x6709;&#x610F;&#x8BC6;&#x7684;&#x6B32;&#x671B;&#x5FC5;&#x987B;&#x4E0E;&#x6F5C;&#x610F;&#x8BC6;&#x7684;<b style="color:red">&#x671F;&#x671B;</b>&#x4E00;&#x81F4;</p>
-
-          </a></div>
-        </div>
-      </details>
-    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x548C;&#x6697;&#x793A;&#x7684;&#x5173;&#x7CFB;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x6697;&#x793A;&#x7684;&#x5173;&#x7CFB;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x4E0E;&#x7231;&#x548C;&#x6068;&#x7684;&#x5173;&#x7CFB;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x4E0E;&#x7231;&#x548C;&#x6068;&#x7684;&#x5173;&#x7CFB;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x548C;&#x68A6;&#x7684;&#x5173;&#x7CFB;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x68A6;&#x7684;&#x5173;&#x7CFB;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x548C;&#x8EAB;&#x4F53;body&#x7684;&#x5173;&#x7CFB;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x548C;&#x8EAB;&#x4F53;&#xFF08;body&#xFF09;&#x7684;&#x5173;&#x7CFB;</div>
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#div-align--leftb-stylecolorred&#x671F;&#x671B;b&#x5F71;&#x54CD;&#x7532;&#x72B6;&#x817A;div" class="md-toc-link">
-             <div align="left"><b style="color:red">&#x671F;&#x671B;</b>&#x5F71;&#x54CD;&#x7532;&#x72B6;&#x817A;</div>
-          </a></div><details style="padding:0;;padding-left:24px;" open>
-        <summary class="md-toc-link-wrapper">
-          <a href="#div-align--left&#x8D5B;&#x65AF;&#x5BF9;&#x4E8E;b-stylecolorred&#x671F;&#x671B;b&#x7684;&#x5B9E;&#x9645;&#x4F8B;&#x5B50;div" class="md-toc-link"> <div align="left">&#x8D5B;&#x65AF;&#x5BF9;&#x4E8E;<b style="color:red">&#x671F;&#x671B;</b>&#x7684;&#x5B9E;&#x9645;&#x4F8B;&#x5B50;</div></a>
-          </summary>
-        <div>
-          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x6770;&#x51FA;&#x7684;&#x827A;&#x672F;&#x5BB6;&#x5FC5;&#x5B9A;&#x662F;&#x8D2B;&#x56F0;&#x7684;" class="md-toc-link">
-            <p>&#x6770;&#x51FA;&#x7684;&#x827A;&#x672F;&#x5BB6;&#x5FC5;&#x5B9A;&#x662F;&#x8D2B;&#x56F0;&#x7684;</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x4E70;&#x623F;&#x7684;b-stylecolorred&#x671F;&#x5F85;b" class="md-toc-link">
-            <p>&#x4E70;&#x623F;&#x7684;<b style="color:red">&#x671F;&#x5F85;</b></p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x73CD;&#x7684;&#x65B0;&#x4E3B;&#x7BA1;" class="md-toc-link">
-            <p>&#x73CD;&#x7684;&#x65B0;&#x4E3B;&#x7BA1;</p>
-
-          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
-          <a href="#&#x4E70;&#x8F66;&#x7684;b-stylecolorred&#x671F;&#x671B;b" class="md-toc-link">
-            <p>&#x4E70;&#x8F66;&#x7684;<b style="color:red">&#x671F;&#x671B;</b></p>
-
-          </a></div>
-        </div>
-      </details>
-    
-        </div>
-      </details>
-    
-</div>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
-      
-  
-    </body></html>
+</div></body></html>
+    </div>
+  </body>
+</html>
