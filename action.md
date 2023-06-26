@@ -1,18 +1,16 @@
----
-ebook:
-  title: My eBook
-  authors: shd101wyy
----
+
 
 [TOC]
 
 
 
+
 # 赛斯资料中关于行动(action)的横向摘录
-><em style="color:red"> 本文章为横向搜索含有关键词的段落，文章只增加简单的分类，尽量保证文章的连续性,减少作者的本人理解和扭曲，文章的分类如果是作者本人思考的会在前面加一个*，如果是原文内容则没有。文章只作为一个索引，对段落的摘录会失去上下文信息，无法代替原文理解。<em>
+><em style="color:red"> 本文章为横向搜索含有关键词的段落，文章只增加简单的分类，尽量保证文章的连续性,减少作者的本人理解和扭曲，文章的分类如果是作者本人思考的会在前面加一个*，如果是原文内容则没有。文章只作为一个索引，对段落的摘录会失去上下文信息，无法代替原文理解。</em>
 
 >action通常被翻译为，行动，行为
 >在赛斯资料中，行动不仅是指世俗意义上的行动，更多的是内在行动，精神行动，灵性行动等。
+
 
 
 ## *行动的定义
@@ -1211,5 +1209,4 @@ ebook:
 	的确，当我建议在现实世界中采取行动，你们很难相信我的话，特别是当这种建议的行动看起来既不实际也不可能时。我知道这一点。我应该更体谅一点。
 	<details> <summary><span style="color:orange">点击查看英文</span></summary>
 	It is true that it is difficult for you to take me at my word when I suggest action in the practical world, particularly when such suggested action may seem neither practical nor possible.I know this.I should be more understanding.</details>
-
 

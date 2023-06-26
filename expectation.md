@@ -1,4 +1,3 @@
-<a href="index.html">返回主页</a>
 [TOC]
 # 赛斯资料中关于<b style="color:orange">期望</b>(<b style="color:orange">expectation</b>)的横向摘录
 
